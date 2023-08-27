@@ -1,0 +1,30 @@
+.descriptionContainer {
+    position: relative;
+
+}
+
+.scrollContainer {
+    width: 100%; /* Ancho del contenedor */
+    height: 70vh; /* Altura del contenedor */
+    overflow: auto; /* Habilitar el desplazamiento */
+    background-color: rgba(25,25,25,0.6);
+    background-image: radial-gradient(ellipse at center, rgba(42, 42, 42, 0.0) 0%, rgba(42, 42, 42, 0.0) 50%, rgba(42, 42, 42, 1) 100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scrollContainer::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: rgba(25,25,25,0.2);
+}
+
+.scrollContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.scrollContainer li {
+    margin-left: 5%;
+    margin-right: 5%;
+}

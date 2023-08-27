@@ -1,0 +1,33 @@
+.imagesContainer {
+    position: relative;
+    display: flex;
+    justify-content: 'center';
+    height: 650px;
+    width: 90%;    
+    margin: 0 auto;
+    margin-top: 3vh;
+}
+
+.imagesContainer div {
+    position: absolute;
+    border-radius: 50px;
+    width: 100%;
+    align-self: center;
+    transition: width 0.45s ease, height 0.45s ease; /* Transición suave para el cambio de tamaño */
+    overflow: hidden;
+}
+.imageSelected {
+    height:100%;
+
+}
+
+.imageNotSelected {
+    height:70%;
+}
+
+.imagesContainer div img {
+    display: block;
+    width: 100%;
+    min-height: 100%;
+}
+

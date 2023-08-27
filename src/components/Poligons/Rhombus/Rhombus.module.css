@@ -1,0 +1,13 @@
+.rhombus {
+    position: relative;
+    width: 25%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    aspect-ratio: 1;
+    cursor: pointer;
+    transition: transform 0.45s ease;
+    overflow: hidden;
+}
+
+.rhombus:hover {
+    transform: scale(1.1);
+}

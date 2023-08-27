@@ -1,0 +1,15 @@
+.heptagonContainer {
+    position: relative;
+    width: 25%;
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    aspect-ratio: 1;
+    /* box-sizing: border-box; */
+    overflow: hidden;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.45s ease;
+}
+
+.heptagonContainer:hover {
+    transform: scale(1.1);
+}

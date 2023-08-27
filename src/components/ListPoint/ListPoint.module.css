@@ -1,0 +1,9 @@
+.linkStyles {
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+    transition: color 0.45s ease;
+}
+
+.linkStyles:hover {
+    color: yellow;
+}

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Judson&display=swap');
+
+.NavbarContainer {
+    position: relative;
+    height: auto;
+}
+
+.NavbarBackGround {
+    /* background-color: blue; */
+}
+
+.navbarOptions {
+    position: absolute;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: green; */
+}
+
+.leftOptions {
+    display: flex;
+    align-items: center;
+    gap: 4%;
+    /* background-color: red; */
+    cursor: pointer;
+    list-style: none;
+    justify-content: center;
+    height: 75%;
+    width: 45%;
+}
+
+.rigthOptions {
+    display: flex;
+    margin-top: 1.5%;
+    height: 30%;
+    margin-right: 1%;
+    aspect-ratio: 1;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: transform 0.45s ease;
+}
+
+.rigthOptions:hover {
+    transform: scale(1.1);
+}
+
+.rigthOptions img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.Link {
+    text-decoration: none;
+    color: black;
+}
+
+
+span {
+    color: #000;
+    font-family: 'Judson', serif;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: color 0.45s ease;
+}
+
+li :hover {
+    color: rgba(0,0,0,0.5);
+}
+

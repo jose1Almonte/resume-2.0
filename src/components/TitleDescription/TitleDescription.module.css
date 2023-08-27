@@ -1,0 +1,20 @@
+.imageBox {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    /* margin-bottom: 5%; */
+    /* margin-top: 5%; */
+}
+
+.paragraph {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-5%, -50%);
+}
+
+.paragraph p {
+    text-indent: 2em; /* Ajusta el valor según el tamaño del indentado deseado */
+}

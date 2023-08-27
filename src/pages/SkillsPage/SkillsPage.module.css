@@ -1,0 +1,37 @@
+.box {
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    /* background-color: red; */
+}
+
+.listChart {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    /* background-color: green; */
+    width: 75%;
+    
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+}
+
+.commonP {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.note {
+    margin-left: 2%;
+    margin-right: 2%;
+    color: rgba(255,255,255, 0.5)
+}
+
+.paragraph {
+    text-indent: 2em;
+}
