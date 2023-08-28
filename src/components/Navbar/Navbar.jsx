@@ -6,6 +6,7 @@ import {HOME_URL, SKILLS_URL, ABOUT_URL, EXPERIENCE_URL, CONTACT_URL} from '../.
 import {mePicture} from '../../constants/images.js'
 import { useWindowWidth } from '../../hooks/useWindowWidth'
 import { NavbarMobile } from '../../vectors/navBarMobile'
+import NavbarMobileModal from '../Modals/NavbarMobileModal'
 
 export default function Navbar() {
 
@@ -63,8 +64,9 @@ export default function Navbar() {
         <div className={Styles.navbarMobile}>
           <button>
             <NavbarMobile />
-
           </button>
+
+          <NavbarMobileModal/>
         </div>
       ) 
       }
