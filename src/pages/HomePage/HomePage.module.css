@@ -1,11 +1,11 @@
+.giantBox {
+    /* max-width: 100%; */
+    overflow-x: hidden;
+}
 
 .title{
     color: black;
     font-size: 40px;
-}
-
-.backGround{
-    /* background-color: #2A2A2A; */
 }
 
 .welcomeMessage {

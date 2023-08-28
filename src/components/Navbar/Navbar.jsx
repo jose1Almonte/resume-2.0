@@ -4,6 +4,7 @@ import './Navbar.css'
 import { Link } from 'react-router-dom'
 import {HOME_URL, SKILLS_URL, ABOUT_URL, EXPERIENCE_URL, CONTACT_URL} from '../../constants/urls.js'
 import {mePicture} from '../../constants/images.js'
+import { useWindowWidth } from '../../hooks/useWindowWidth'
 
 export default function Navbar() {
 
@@ -26,29 +27,40 @@ export default function Navbar() {
     },
   ]
 
+  const {windowWidth} = useWindowWidth();
+
   return (
     <div className='NavbarContainer'>
-      <NavbarBackGround className={'NavbarBackGround'}/>
+      {windowWidth > 500 ? (
+        <>
+          <NavbarBackGround className={'NavbarBackGround'}/>
 
-      <header className="navbarOptions">
-        <ul className="leftOptions">
+          <header className="navbarOptions">
+            <ul className="leftOptions">
 
-          {
-            leftSideOptions.map((option, index) => (
-              <li key={index}>
-                <Link to={option.href} className='Link'>
-                  <span>{option.text}</span>
-                </Link>
-              </li>
-            ))
-          }
+              {
+                leftSideOptions.map((option, index) => (
+                  <li key={index}>
+                    <Link to={option.href} className='Link'>
+                      <span>{option.text}</span>
+                    </Link>
+                  </li>
+                ))
+              }
 
-        </ul>
+            </ul>
 
-        <Link to={HOME_URL} className='rigthOptions'>
-            <img src={mePicture}/>
-        </Link>
-      </header>
+            <Link to={HOME_URL} className='rigthOptions'>
+                <img src={mePicture}/>
+            </Link>
+          </header>
+        </>
+      ) : (
+        <>
+        <h1>NavBar phone not done yet, please use your desktop</h1>
+        </>
+      )}
+
 
     </div>
   )

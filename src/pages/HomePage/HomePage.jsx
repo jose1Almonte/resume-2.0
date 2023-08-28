@@ -15,7 +15,7 @@ export function HomePage() {
   const {windowWidth} = useWindowWidth();
 
   return (
-    <>
+    <div className={Styles.giantBox}>
 
     <Carousel/>
 
@@ -29,6 +29,6 @@ export function HomePage() {
       <Heptagon urlPage={SKILLS_URL} urlImage={meWithCompany}/>
 
     </div>
-    </>
+    </div>
   )
 }
