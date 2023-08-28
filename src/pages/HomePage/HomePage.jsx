@@ -7,14 +7,19 @@ import Rhombus from '../../components/Poligons/Rhombus/Rhombus.jsx';
 import me from '../../images/me.jpg'
 import meAndMom from '../../images/meAndMom.jpg'
 import meWithCompany from '../../images/meWithCompany.jpg'
+import { useWindowWidth } from '../../hooks/useWindowWidth';
 
 
 export function HomePage() {
+
+  const {windowWidth} = useWindowWidth();
+
   return (
     <>
 
     <Carousel/>
 
+    <h1 className={Styles.welcomeMessage}>{windowWidth}</h1>
     <h1 className={Styles.welcomeMessage}>Welcome to my resume page</h1>
 
     <div className={Styles.row}>

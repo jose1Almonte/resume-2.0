@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import {Motion, spring} from 'react-motion';
-import me from '../../images/me.jpg'
-import meAndMom from '../../images/meAndMom.jpg'
-import meWithCompany from '../../images/meWithCompany.jpg'
 import Styles from './Carousel.module.css';
+import { meAndMomPicture, mePicture, meWithCompanyPicture } from '../../constants/images';
 
 export function Carousel() {
     const images = [
-        me,
-        meAndMom,
-        meWithCompany,
+        mePicture,
+        meAndMomPicture,
+        meWithCompanyPicture,
       ]
         const [selectedIndex, setSelectedIndex] = useState(0);
       

@@ -1,8 +1,9 @@
-import React from 'react'
+// import React from 'react'
 import { NavbarBackGround } from '../../vectors/NavbarBackGround'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
 import {HOME_URL, SKILLS_URL, ABOUT_URL, EXPERIENCE_URL, CONTACT_URL} from '../../constants/urls.js'
+import {mePicture} from '../../constants/images.js'
 
 export default function Navbar() {
 
@@ -33,8 +34,8 @@ export default function Navbar() {
         <ul className="leftOptions">
 
           {
-            leftSideOptions.map((option) => (
-              <li>
+            leftSideOptions.map((option, index) => (
+              <li key={index}>
                 <Link to={option.href} className='Link'>
                   <span>{option.text}</span>
                 </Link>
@@ -45,9 +46,7 @@ export default function Navbar() {
         </ul>
 
         <Link to={HOME_URL} className='rigthOptions'>
-            <img
-            src='src\images\me.jpg'
-            />
+            <img src={mePicture}/>
         </Link>
       </header>
 
