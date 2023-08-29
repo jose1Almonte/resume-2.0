@@ -41,7 +41,7 @@ export default function NavbarMobileModal({showNavbar, setShowNavbar}) {
             leftSideOptions.map((option, index) => (
               <li key={index} className={Styles.option}>
                 <Link to={option.href} className={Styles.link} onClick={() => {setShowNavbar(!showNavbar)}}>
-                  <span>{option.text}</span>
+                  <span className={Styles.spanMobileNavbarOption}>{option.text}</span>
                 </Link>
               </li>
             ))
