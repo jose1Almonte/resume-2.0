@@ -4,6 +4,10 @@
     font-size: 40px;
 }
 
+.giantBox {
+    overflow-x: hidden;
+}
+
 .backGround{
     /* background-color: #2A2A2A; */
 }

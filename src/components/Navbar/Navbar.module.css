@@ -75,3 +75,8 @@ li :hover {
     color: rgba(0,0,0,0.5);
 }
 
+.navbarButton {
+    background-color: transparent;
+    border: 0px solid transparent;
+}
+

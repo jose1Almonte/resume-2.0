@@ -1,0 +1,82 @@
+.optionsBox {
+    position: fixed;
+    top: 0px;
+    /* bottom:0px; */
+    z-index: 999;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /* width: 100%; */
+    width: 90vw;
+    height: 100vh;
+    background-color: rgba(50,50,50,0.95);
+}
+
+.optionsBox.appear {
+    left: 0;
+    animation: slideInLeft 0.5s forwards; /* Agrega la animación de entrada */
+  }
+
+.optionsBox.disappear {
+    left: 0;
+    animation: slideOut 0.5s forwards; /* Agrega la animación de entrada */
+  }
+
+.option {
+    text-decoration: none;
+    list-style: none;
+    /* width: 100%; */
+    /* background-color: red; */
+    margin: 5%;
+    border-radius: 5px;
+    border: 0.1px solid rgba(255, 255, 255, 0.1);
+}
+
+.closeNavbarButton {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin: 5%;
+    aspect-ratio: 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.closeNavbarText {
+    font-size: 5vw;
+}
+
+.link {
+    /* border-radius: 5px;
+    border: 0.5px solid #fff;
+    margin: 5%;
+    width: 60vw;
+    background-color: green; */
+}
+
+span {
+    color: #fff;
+    font-family: 'Judson', serif;
+    font-size: 10vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: color 0.45s ease;
+    margin-left: 5%;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+    to {
+      transform: translateX(-150%);
+    }
+  }

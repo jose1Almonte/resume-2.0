@@ -7,6 +7,7 @@ import {mePicture} from '../../constants/images.js'
 import { useWindowWidth } from '../../hooks/useWindowWidth'
 import { NavbarMobile } from '../../vectors/navBarMobile'
 import NavbarMobileModal from '../Modals/NavbarMobileModal'
+import { useState } from 'react'
 
 export default function Navbar() {
 
@@ -30,6 +31,8 @@ export default function Navbar() {
   ]
 
   const {windowWidth} = useWindowWidth()
+
+  const [showNavbar, setShowNavbar] = useState(false);
 
   return (
     <>
@@ -62,11 +65,11 @@ export default function Navbar() {
         </>
       ) : (
         <div className={Styles.navbarMobile}>
-          <button>
+          <button className={Styles.navbarButton} onClick={() => {setShowNavbar(!showNavbar);}}>
             <NavbarMobile />
           </button>
 
-          <NavbarMobileModal/>
+          <NavbarMobileModal showNavbar={showNavbar} setShowNavbar={setShowNavbar}/>
         </div>
       ) 
       }

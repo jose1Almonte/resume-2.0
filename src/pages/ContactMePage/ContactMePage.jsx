@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import WhatsAppIcon from '../../vectors/WhatsAppIcon';
 import Styles from './ContactMePage.module.css';
@@ -53,10 +52,9 @@ export default function ContactMePage() {
       <h1 className={Styles.title}>My social networks:</h1>
 
       <div className={Styles.socialsContainer}>
-        {socialNetworks.map((socialNetwork) => (
+        {socialNetworks.map((socialNetwork, index) => (
 
-          <div className={Styles.card}>
-
+          <div key={index} className={Styles.card}>
             <p className={Styles.topP}>{socialNetwork.name}</p>
 
             <div className={Styles.socialNetwork}>

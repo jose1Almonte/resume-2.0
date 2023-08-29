@@ -1,4 +1,3 @@
-import React from 'react'
 import { Carousel } from '../../components/Carousel/Carousel';
 import Styles from './HomePage.module.css';
 import {SKILLS_URL} from '../../constants/urls.js';
@@ -15,7 +14,7 @@ export function HomePage() {
   const {windowWidth} = useWindowWidth();
 
   return (
-    <>
+    <div className={Styles.giantBox}>
 
     <Carousel/>
 
@@ -23,12 +22,10 @@ export function HomePage() {
     <h1 className={Styles.welcomeMessage}>Welcome to my resume page</h1>
 
     <div className={Styles.row}>
-
       <Heptagon urlPage={SKILLS_URL} urlImage={me}/>
       <Rhombus urlPage={SKILLS_URL} urlImage={meAndMom}/>
       <Heptagon urlPage={SKILLS_URL} urlImage={meWithCompany}/>
-
     </div>
-    </>
+    </div>
   )
 }
