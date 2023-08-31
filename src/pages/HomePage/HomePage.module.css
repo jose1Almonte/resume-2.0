@@ -1,10 +1,13 @@
 
+
 .title{
     color: black;
     font-size: 40px;
 }
 
 .giantBox {
+    position: relative;
+    min-height: 100vh;
     overflow-x: hidden;
 }
 
@@ -14,9 +17,10 @@
 
 .welcomeMessage {
     text-align: center;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
+
 
 .row {
     display: flex;
@@ -26,4 +30,36 @@
     padding-top: 40px;
     padding-bottom: 40px;
     flex-wrap: wrap;
+}
+
+@media (max-width: 500px) {
+    /* .row {
+        position: absolute;
+        bottom: 0;
+    } */
+
+    .giantBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .welcomeMessage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* background-color: red; */
+        flex: 1;
+        /* padding-bottom: 5%; */
+
+    }
+
+    .carouselContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        flex: 1.6;
+        /* background-color: green; */
+    }
 }

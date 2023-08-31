@@ -65,8 +65,9 @@ export default function Navbar() {
         </>
       ) : (
         <div className={Styles.navbarMobile}>
+
           <button className={Styles.navbarButton} onClick={() => {setShowNavbar(!showNavbar);}}>
-            <NavbarMobile />
+            <NavbarMobile className={Styles.vectorStyles} />
           </button>
 
           <NavbarMobileModal showNavbar={showNavbar} setShowNavbar={setShowNavbar}/>

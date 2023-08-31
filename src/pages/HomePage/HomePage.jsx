@@ -11,20 +11,23 @@ import { useWindowWidth } from '../../hooks/useWindowWidth';
 
 export function HomePage() {
 
-  const {windowWidth} = useWindowWidth();
+  // const {windowWidth} = useWindowWidth();
 
   return (
     <div className={Styles.giantBox}>
-
+    
+    <div className={Styles.carouselContainer}>
     <Carousel/>
+    </div>
 
-    <h1 className={Styles.welcomeMessage}>{windowWidth}</h1>
+    {/* <h1 className={Styles.welcomeMessage}>{windowWidth}</h1> */}
     <h1 className={Styles.welcomeMessage}>Welcome to my resume page</h1>
-
+    <div className={Styles.rowContainer}>
     <div className={Styles.row}>
       <Heptagon urlPage={SKILLS_URL} urlImage={me}/>
       <Rhombus urlPage={SKILLS_URL} urlImage={meAndMom}/>
       <Heptagon urlPage={SKILLS_URL} urlImage={meWithCompany}/>
+    </div>
     </div>
     </div>
   )

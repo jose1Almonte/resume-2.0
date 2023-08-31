@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import {Motion, spring} from 'react-motion';
 import Styles from './Carousel.module.css';
 import { meAndMomPicture, mePicture, meWithCompanyPicture } from '../../constants/images';
-import { useWindowWidth } from '../../hooks/useWindowWidth';
 
 export function Carousel() {
     const images = [
@@ -12,7 +11,7 @@ export function Carousel() {
       ]
     const [selectedIndex, setSelectedIndex] = useState(0);
     
-    const {windowWidth} = useWindowWidth();
+    // const {windowWidth} = useWindowWidth();
 
         useEffect(() => {
           const intervalId = setInterval(() => {

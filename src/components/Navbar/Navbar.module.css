@@ -9,6 +9,19 @@
     /* background-color: blue; */
 }
 
+.navbarMobile {
+    position:relative;
+    width: 10%;
+    min-width: 35px;
+    aspect-ratio: 1;
+    margin: 5%;
+}
+
+.vectorStyles {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
 .navbarOptions {
     position: absolute;
     /* background-color: green; */
