@@ -6,6 +6,8 @@ import workingOnNavbar from '../images/workingOnNavbar.png'
 import rm1 from '../images/rm1.png'
 import rm2 from '../images/rm2.png'
 import resumeHomeOnPhone from '../images/resumeHomeOnPhone.png'
+import carteleraCaracas from '../images/carteleraCaracas.png'
+import carteleraCaracas2 from '../images/carteleraCaracas2.png'
 
 export const pictures = [
     meOnAvila,
@@ -14,6 +16,8 @@ export const pictures = [
     rm1,
     rm2,
     resumeHomeOnPhone,
+    carteleraCaracas,
+    carteleraCaracas2,
 ]
 
 // export const mePicture = me;
