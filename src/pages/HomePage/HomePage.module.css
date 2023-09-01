@@ -7,7 +7,7 @@
 
 .giantBox {
     position: relative;
-    min-height: 100vh;
+    min-height: 90vh;
     overflow-x: hidden;
 }
 
@@ -17,8 +17,8 @@
 
 .welcomeMessage {
     text-align: center;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    /* margin-top: 5vh; */
+    /* margin-bottom: 5vh; */
 }
 
 

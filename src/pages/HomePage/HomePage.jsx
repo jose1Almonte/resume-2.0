@@ -22,12 +22,11 @@ export function HomePage() {
 
     {/* <h1 className={Styles.welcomeMessage}>{windowWidth}</h1> */}
     <h1 className={Styles.welcomeMessage}>Welcome to my resume page</h1>
-    <div className={Styles.rowContainer}>
+    
     <div className={Styles.row}>
       <Heptagon urlPage={EXPERIENCE_URL} urlImage={meOnAvila}/>
       <Rhombus urlPage={'https://rick-and-morty-site-78b94.web.app/'} urlImage={rm1}/>
       <Heptagon urlPage={'https://microproyecto2-e4653.web.app/'} urlImage={carteleraCaracas}/>
-    </div>
     </div>
     </div>
   )
