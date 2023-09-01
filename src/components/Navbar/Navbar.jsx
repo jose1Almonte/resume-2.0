@@ -1,10 +1,13 @@
 // import React from 'react'
 import { NavbarBackGround } from '../../vectors/NavbarBackGround'
-import './Navbar.css'
+import Styles from './Navbar.module.css'
 import { Link } from 'react-router-dom'
 import {HOME_URL, SKILLS_URL, ABOUT_URL, EXPERIENCE_URL, CONTACT_URL} from '../../constants/urls.js'
-import {mePicture} from '../../constants/images.js'
+import photoProfile from '../../images/meOnAvila.jpg'
 import { useWindowWidth } from '../../hooks/useWindowWidth'
+import { NavbarMobile } from '../../vectors/navBarMobile'
+import NavbarMobileModal from '../Modals/NavbarMobileModal'
+import { useState } from 'react'
 
 export default function Navbar() {
 
@@ -27,41 +30,50 @@ export default function Navbar() {
     },
   ]
 
-  const {windowWidth} = useWindowWidth();
+  const {windowWidth} = useWindowWidth()
+
+  const [showNavbar, setShowNavbar] = useState(false);
 
   return (
-    <div className='NavbarContainer'>
+    <>
       {windowWidth > 500 ? (
         <>
-          <NavbarBackGround className={'NavbarBackGround'}/>
+          <div className={Styles.NavbarContainer}>
+            <NavbarBackGround className={Styles.NavbarBackGround}/>
 
-          <header className="navbarOptions">
-            <ul className="leftOptions">
+            <header className={Styles.navbarOptions}>
+              <ul className={Styles.leftOptions}>
 
-              {
-                leftSideOptions.map((option, index) => (
-                  <li key={index}>
-                    <Link to={option.href} className='Link'>
-                      <span>{option.text}</span>
-                    </Link>
-                  </li>
-                ))
-              }
+                {
+                  leftSideOptions.map((option, index) => (
+                    <li key={index}>
+                      <Link to={option.href} className={Styles.Link}>
+                        <span>{option.text}</span>
+                      </Link>
+                    </li>
+                  ))
+                }
 
-            </ul>
+              </ul>
 
-            <Link to={HOME_URL} className='rigthOptions'>
-                <img src={mePicture}/>
-            </Link>
-          </header>
+              <Link to={HOME_URL} className={Styles.rigthOptions}>
+                  <img src={photoProfile}/>
+              </Link>
+            </header>
+
+          </div>
         </>
       ) : (
-        <>
-        <h1>NavBar phone not done yet, please use your desktop</h1>
-        </>
-      )}
+        <div className={Styles.navbarMobile}>
 
+          <button className={Styles.navbarButton} onClick={() => {setShowNavbar(!showNavbar);}}>
+            <NavbarMobile className={Styles.vectorStyles} />
+          </button>
 
-    </div>
+          <NavbarMobileModal showNavbar={showNavbar} setShowNavbar={setShowNavbar}/>
+        </div>
+      ) 
+      }
+    </>
   )
 }

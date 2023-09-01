@@ -4,7 +4,7 @@ import Styles from './Heptagon.module.css'
 
 export function Heptagon({urlPage, urlImage}) {
   return (
-    <Link to={urlPage} className={Styles.heptagonContainer}>
+    <Link to={urlPage} target='_blank' className={Styles.heptagonContainer}>
         <img src={urlImage}/>
         <div className="gradientLayer"/>
     </Link>

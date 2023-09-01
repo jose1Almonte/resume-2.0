@@ -2,8 +2,9 @@
     position: relative;
     display: flex;
     justify-content: 'center';
-    height: 650px;
-    width: 90%;    
+    /* height: 650px; */
+    width: 70%; 
+    aspect-ratio: 1.5;   
     margin: 0 auto;
     margin-top: 3vh;
 }

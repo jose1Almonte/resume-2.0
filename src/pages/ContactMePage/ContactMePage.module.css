@@ -11,6 +11,7 @@
 }
 
 .card {
+    min-width: 170px;
     width: 20%;
     /* background-color: green; */
     margin-bottom: 50px;

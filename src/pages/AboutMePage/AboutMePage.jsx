@@ -1,4 +1,4 @@
-import me from '../../images/me.jpg';
+import meOnAvila from '../../images/meOnAvila.jpg';
 import { TitleDescription } from '../../components/TitleDescription/TitleDescription';
 
 export default function AboutMePage() {
@@ -18,8 +18,8 @@ export default function AboutMePage() {
 
   return (
     <>
-    <TitleDescription imageURL={me} paragraphText={whoIAmText} titleText={'Who I am?'}/>
-    <TitleDescription imageURL={me} paragraphText={hobbiesText} titleText={'Hobbies'}/>
+    <TitleDescription imageURL={meOnAvila} paragraphText={whoIAmText} titleText={'Who I am?'}/>
+    <TitleDescription imageURL={meOnAvila} paragraphText={hobbiesText} titleText={'Hobbies'}/>
     </>
   )
 }

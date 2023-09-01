@@ -1,19 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import {Motion, spring} from 'react-motion';
 import Styles from './Carousel.module.css';
-import { meAndMomPicture, mePicture, meWithCompanyPicture } from '../../constants/images';
+import { pictures } from '../../constants/images';
+
 
 export function Carousel() {
-    const images = [
-        mePicture,
-        meAndMomPicture,
-        meWithCompanyPicture,
-      ]
-        const [selectedIndex, setSelectedIndex] = useState(0);
-      
+    // const images = pictures;
+
+    const [selectedIndex, setSelectedIndex] = useState(0);
+
         useEffect(() => {
           const intervalId = setInterval(() => {
-            const length = images.length - 1;
+            const length = pictures.length - 1;
             
             if (selectedIndex == length) {
               setSelectedIndex(0);
@@ -24,16 +22,16 @@ export function Carousel() {
           }, 3000)
       
           return () => clearInterval(intervalId);
-        }, [images.length, selectedIndex])
+        }, [selectedIndex])
 
   return (
     <div className={Styles.imagesContainer}>
 
-    {images.map((image, index) => (
+    {pictures.map((image, index) => (
       <Motion
         key={image}
         defaultStyle={{ translateX: selectedIndex === index ? 0 : 110 }}
-        style={{ translateX: spring(selectedIndex === index ? 0 : (index + 1) === selectedIndex ? -103 : (index - 1) === selectedIndex ? 103   : index < selectedIndex ? -110 : 110)}}
+        style={{ translateX: spring(selectedIndex === index ? 0 : (index + 1) === selectedIndex ? -103 : (index - 1) === selectedIndex ? 103   : index < selectedIndex ? -150 : 150)}}
       >
         {(style) => (
           <div

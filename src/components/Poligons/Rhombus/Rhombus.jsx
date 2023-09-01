@@ -5,7 +5,7 @@ import Styles from './Rhombus.module.css'
 
 export default function Rhombus({urlPage, urlImage}) {
   return (
-    <Link to={urlPage} className={Styles.rhombus}>
+    <Link to={urlPage} target='_blank' className={Styles.rhombus}>
         <img src={urlImage}/>
         <div className="gradientLayer"/>
     </Link>

@@ -1,10 +1,10 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import WhatsAppIcon from '../../vectors/WhatsAppIcon';
 import Styles from './ContactMePage.module.css';
 import InstagramIcon from '../../vectors/InstagramIcon';
 import { FacebookIcon } from '../../vectors/FacebookIcon';
 import GmailIcon from '../../vectors/GmailIcon';
+import LinkedinIcon from '../../vectors/LinkedinIcon';
 
 export default function ContactMePage() {
 
@@ -40,9 +40,9 @@ export default function ContactMePage() {
     },
     {
       name: 'Linkedin',
-      href: 'mailto:joseyv5@gmail.com',
-      icon: <GmailIcon className={''} size={iconsSize}/>,
-      description: '(Used a litle more than Facebook)',
+      href: 'https://www.linkedin.com/in/jose-antonio-almonte-1a32b528a/',
+      icon: <LinkedinIcon className={''} size={iconsSize}/>,
+      description: 'Here I share what I do',
     },
     
   ]
@@ -53,10 +53,9 @@ export default function ContactMePage() {
       <h1 className={Styles.title}>My social networks:</h1>
 
       <div className={Styles.socialsContainer}>
-        {socialNetworks.map((socialNetwork) => (
+        {socialNetworks.map((socialNetwork, index) => (
 
-          <div className={Styles.card}>
-
+          <div key={index} className={Styles.card}>
             <p className={Styles.topP}>{socialNetwork.name}</p>
 
             <div className={Styles.socialNetwork}>

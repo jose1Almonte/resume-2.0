@@ -51,6 +51,13 @@ export function useExperiencePoints() {
           downloadText: 'Download Android APK',
           downloadName: 'AventuraT.apk',
         },
+        {
+          title:'Rick And Morty Site',
+          titleRef:'https://rick-and-morty-site-78b94.web.app/',
+          description:`The Rick And Morty Site`,
+          downloadText: '',
+          downloadName: '',
+        },
         ],
 
         academyPoints: [
