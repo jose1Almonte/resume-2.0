@@ -15,9 +15,9 @@ export function useExperiencePoints() {
           coding community. I am continually expanding my knowledge of the 
           language by actively seeking out relevant documentation to incorporate 
           new functionalities into the projects I work on.`,
-          descriptionRef: `/src/assets/me.jpg`,
+          descriptionRef: `/src/assets/English language certificate.pdf`,
           downloadText: 'DownLoad PDF',
-          downloadName: 'yo.jpg',
+          downloadName: 'englishLanguageCertificate.pdf',
         },
         {
           title:'PsicoPana project:',

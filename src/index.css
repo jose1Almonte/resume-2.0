@@ -74,7 +74,8 @@ p {
   color: #FFF;
   text-align: justify;
   font-family: 'Judson', serif;
-  font-size: 1.9vw;
+  /* font-size: 1.9vw; */
+  font-size: calc(2px + 1.9vw);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
