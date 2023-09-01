@@ -21,7 +21,8 @@ body {
 h1 {
   color: #ffffff;
     font-family: 'Judson', serif;
-    font-size: 3.5vw;
+    /* font-size: 3.5vw; */
+    font-size: calc(12px + 3.5vw);
     font-style: normal;
     font-weight: 400;
     line-height: normal;

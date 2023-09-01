@@ -50,6 +50,8 @@
         justify-content: center;
         /* background-color: red; */
         flex: 1;
+        font-size:calc(12px + 1.5vw);
+        /* font-size: 40px; */
         /* padding-bottom: 5%; */
 
     }
@@ -59,7 +61,7 @@
         flex-direction: column;
         justify-content: center;
     
-        flex: 1.6;
-        /* background-color: green; */
+        flex: 35;
+        background-color: green;
     }
 }
