@@ -53,11 +53,12 @@
     text-indent: 0.6em;
     margin-left: 5%;
     margin-right: 5%;
+    font-size: calc(12px + 1.7vw);
 }
 
 .topP {
     border-bottom: 5px solid rgba(90,90,90, 1);
-    font-size: 1.7vw;
+    /* font-size: 1.7vw; */
 }
 
 .bottomP {
