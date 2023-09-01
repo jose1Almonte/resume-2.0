@@ -54,7 +54,7 @@ export function useExperiencePoints() {
         {
           title:'Rick And Morty Site',
           titleRef:'https://rick-and-morty-site-78b94.web.app/',
-          description:`The Rick And Morty Site`,
+          description:`Allow me to showcase a glimpse of my Rick and Morty website—a product crafted through the fusion of Vite + ReactJS. Its essence lies in the augmentation of my diverse skill set, leveraging Axios for seamless data retrieval, harnessing the versatility of SVG formats, mastering the art of flex wrap, and more.`,
           downloadText: '',
           downloadName: '',
         },
@@ -64,34 +64,18 @@ export function useExperiencePoints() {
             {
                 title: 'NSE college:',
                 titleRef: 'https://www.instagram.com/colegionse/?hl=es-la',
-                description: `I have studied at Proidiomas since I was 12 years old,
-                completing both the kids and adult levels. This course
-                has provided me with a solid foundation in English communication 
-                skills, enabling me to effectively interact with others. 
-                Moreover, it has greatly contributed to my proficiency in software 
-                development, as English is the predominant language in the global 
-                coding community. I am continually expanding my knowledge of the 
-                language by actively seeking out relevant documentation to incorporate 
-                new functionalities into the projects I work on.`,
-                descriptionRef: `/src/assets/me.jpg`,
-                downloadText: 'DownLoad PDF',
-                downloadName: 'yo.jpg',
+                description: `from 1rst grade to fifth bachelor year`,
+                descriptionRef: ``,
+                downloadText: '',
+                downloadName: '',
             },
             {
                 title: 'UNIMET:',
                 titleRef: 'https://www.unimet.edu.ve/',
-                description: `I have studied at Proidiomas since I was 12 years old,
-                completing both the kids and adult levels. This course
-                has provided me with a solid foundation in English communication 
-                skills, enabling me to effectively interact with others. 
-                Moreover, it has greatly contributed to my proficiency in software 
-                development, as English is the predominant language in the global 
-                coding community. I am continually expanding my knowledge of the 
-                language by actively seeking out relevant documentation to incorporate 
-                new functionalities into the projects I work on.`,
-                descriptionRef: `/src/assets/me.jpg`,
-                downloadText: 'DownLoad PDF',
-                downloadName: 'yo.jpg',
+                description: `Since 2018. Right now I'm still strudying, finishing my career of System Enginering`,
+                descriptionRef: ``,
+                downloadText: '',
+                downloadName: '',
             },
         ]
     }
