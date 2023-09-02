@@ -1,8 +1,10 @@
 // import React from 'react'
+import { useWindowWidth } from '../../hooks/useWindowWidth';
 import { Paragraphs } from '../Paragraphs/Paragraphs'
 import Styles from './TitleDescription.module.css'
 
 export function TitleDescription({titleText, imageURL, paragraphText}) {
+
   return (
     <>
       <h1>{titleText}</h1>

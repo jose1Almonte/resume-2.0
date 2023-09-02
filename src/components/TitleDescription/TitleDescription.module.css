@@ -2,10 +2,10 @@
     display: flex;
     position: relative;
     width: 100%;
-    height: auto;
+    min-height: auto;
     overflow: hidden;
-    /* margin-bottom: 5%; */
-    /* margin-top: 5%; */
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 .paragraph {

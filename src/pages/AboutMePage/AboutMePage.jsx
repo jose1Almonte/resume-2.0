@@ -1,5 +1,7 @@
 import meOnAvila from '../../images/meOnAvila.jpg';
+import meAndMom from '../../images/meAndMom.jpg';
 import { TitleDescription } from '../../components/TitleDescription/TitleDescription';
+import { useWindowWidth } from '../../hooks/useWindowWidth';
 
 export default function AboutMePage() {
 
@@ -15,11 +17,13 @@ export default function AboutMePage() {
 
   Additionally, I find solace in physical training as a means to alleviate the challenges that weigh on my mind. Taking care of my body not only benefits my overall well-being but also provides a valuable outlet for stress relief. Furthermore, I occasionally indulge in playing video games, as it allows me to unwind and reward myself after a productive day of hard work.`
 
-
+  const {windowWidth} = useWindowWidth();
   return (
     <>
-    <TitleDescription imageURL={meOnAvila} paragraphText={whoIAmText} titleText={'Who I am?'}/>
-    <TitleDescription imageURL={meOnAvila} paragraphText={hobbiesText} titleText={'Hobbies'}/>
+    <TitleDescription imageURL={windowWidth > 210 ? meOnAvila : meAndMom} paragraphText={whoIAmText} titleText={'Who I am?'}/>
+    <TitleDescription imageURL={windowWidth > 210 ? meOnAvila : meAndMom} paragraphText={hobbiesText} titleText={'Hobbies'}/>
+
+    <h1>{windowWidth}</h1>
     </>
   )
 }
