@@ -22,8 +22,6 @@ export default function AboutMePage() {
     <>
     <TitleDescription imageURL={windowWidth > 210 ? meOnAvila : meAndMom} paragraphText={whoIAmText} titleText={'Who I am?'}/>
     <TitleDescription imageURL={windowWidth > 210 ? meOnAvila : meAndMom} paragraphText={hobbiesText} titleText={'Hobbies'}/>
-
-    <h1>{windowWidth}</h1>
     </>
   )
 }
