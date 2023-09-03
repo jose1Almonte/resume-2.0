@@ -1,7 +1,61 @@
 
 export function useExperiencePoints() {
-    const experiencePoints = {
-        
+  const experiencePoints = {
+    
+        myOwnProjects: [
+          {
+            title:'Rick And Morty Site:',
+            titleRef:'https://rick-and-morty-site-78b94.web.app/',
+            description:`Allow me to showcase a glimpse of my Rick and Morty website—a product crafted through the fusion of Vite + ReactJS. Its essence lies in the augmentation of my diverse skill set, leveraging Axios for seamless data retrieval, harnessing the versatility of SVG formats, mastering the art of flex wrap, and more.`,
+            descriptionRef:`https://rick-and-morty-site-78b94.web.app/`,
+            downloadText: 'See the page.',
+            downloadName: '',
+          },
+          {
+            title:'Movies Site:',
+            titleRef:'https://microproyecto2-e4653.web.app/',
+            description:`This was one of my firsts "Micro-Projects" my team (2 students) and me has just to days to create this site. 
+            It consist on a page that you firstly has to sign up and/or login and after that, you can see the diferent types of movies that exists.
+            You can also search by name and order by more recent and coming soon movies.
+            Also, you can see some of the movie details you selected`,
+            descriptionRef:`https://microproyecto2-e4653.web.app/`,
+            downloadText: 'See the page.',
+            downloadName: '',
+          },
+          {
+            title:'AventuraT project:',
+            titleRef:'https://github.com/jose1Almonte/AventuraT.git',
+            description:`This mobile app project enhances user interactions with tourism 
+            enterprises, offering a user-friendly platform to explore and subscribe to various 
+            travel options. Users can also connect with key enterprise contacts. The app 
+            streamlines payment management, enables VIP service upgrades, and provides comprehensive 
+            oversight of travel packages for enterprises, resulting in an improved overall tourism experience.`,
+            descriptionRef:`./src/assets/app-release.apk`,
+            downloadText: 'Download Android APK.',
+            downloadName: 'AventuraT.apk',
+          },
+          {
+            title:'PsicoPana project:',
+            titleRef:'https://github.com/GAUGUSTO1602/proyectoSist.git',
+            description:`This project signifies my first major step in undertaking 
+            substantial initiatives at Venezuela's Metropolitan University (UNIMET). 
+            It emerged from the "Information Systems" course, involving the creation 
+            of a platform for patients seeking medical and psychological support. 
+            The platform facilitates seamless interaction between patients and healthcare 
+            professionals, streamlining communication and enhancing the overall healthcare 
+            experience. The project encompassed various phases, from conceptualization to 
+            website implementation, requiring careful technology selection, intuitive 
+            design, and secure data transmission. The culmination was a robust platform 
+            connecting healthcare professionals with those in need, highlighting the value 
+            of interdisciplinary collaboration and technology-driven societal advancement. 
+            This UNIMET project laid the foundation for my growth in information systems 
+            and healthcare technology.`,
+            descriptionRef:`https://proyecto-sist-info.web.app/`,
+            downloadText: 'See the page',
+            downloadName: 'yo.jpg',
+          },
+        ],
+
         coursePoints: [
         {
           title: 'Proidiomas:',
@@ -19,62 +73,24 @@ export function useExperiencePoints() {
           downloadText: 'DownLoad PDF',
           downloadName: 'englishLanguageCertificate.pdf',
         },
-        {
-          title:'PsicoPana project:',
-          titleRef:'https://github.com/GAUGUSTO1602/proyectoSist.git',
-          description:`This project signifies my first major step in undertaking 
-          substantial initiatives at Venezuela's Metropolitan University (UNIMET). 
-          It emerged from the "Information Systems" course, involving the creation 
-          of a platform for patients seeking medical and psychological support. 
-          The platform facilitates seamless interaction between patients and healthcare 
-          professionals, streamlining communication and enhancing the overall healthcare 
-          experience. The project encompassed various phases, from conceptualization to 
-          website implementation, requiring careful technology selection, intuitive 
-          design, and secure data transmission. The culmination was a robust platform 
-          connecting healthcare professionals with those in need, highlighting the value 
-          of interdisciplinary collaboration and technology-driven societal advancement. 
-          This UNIMET project laid the foundation for my growth in information systems 
-          and healthcare technology.`,
-          descriptionRef:`https://proyecto-sist-info.web.app/`,
-          downloadText: 'See the page',
-          downloadName: 'yo.jpg',
-        },
-        {
-          title:'AventuraT project:',
-          titleRef:'https://github.com/jose1Almonte/AventuraT.git',
-          description:`This mobile app project enhances user interactions with tourism 
-          enterprises, offering a user-friendly platform to explore and subscribe to various 
-          travel options. Users can also connect with key enterprise contacts. The app 
-          streamlines payment management, enables VIP service upgrades, and provides comprehensive 
-          oversight of travel packages for enterprises, resulting in an improved overall tourism experience.`,
-          descriptionRef:`./src/assets/app-release.apk`,
-          downloadText: 'Download Android APK',
-          downloadName: 'AventuraT.apk',
-        },
-        {
-          title:'Rick And Morty Site',
-          titleRef:'https://rick-and-morty-site-78b94.web.app/',
-          description:`Allow me to showcase a glimpse of my Rick and Morty website—a product crafted through the fusion of Vite + ReactJS. Its essence lies in the augmentation of my diverse skill set, leveraging Axios for seamless data retrieval, harnessing the versatility of SVG formats, mastering the art of flex wrap, and more.`,
-          downloadText: '',
-          downloadName: '',
-        },
         ],
+
 
         academyPoints: [
             {
                 title: 'NSE college:',
                 titleRef: 'https://www.instagram.com/colegionse/?hl=es-la',
-                description: `from 1rst grade to fifth bachelor year`,
-                descriptionRef: ``,
-                downloadText: '',
+                description: `from 1rst grade to fifth bachelor year, here I spend a lot of my time and learn all the basics topics from math, geographics, etc. Also I learned about differents way to thinks and how people can interact with others`,
+                descriptionRef: `https://www.instagram.com/colegionse/?hl=es-la`,
+                downloadText: 'See intagram',
                 downloadName: '',
             },
             {
                 title: 'UNIMET:',
                 titleRef: 'https://www.unimet.edu.ve/',
-                description: `Since 2018. Right now I'm still strudying, finishing my career of System Enginering`,
-                descriptionRef: ``,
-                downloadText: '',
+                description: `Since 2018. Right now I'm still strudying, finishing my career of System Enginering. In this university I grow myself studying differents topics about my career; improving my way to think, learn and applicate my knowledge. Also I learn how to work in a team and take the role of a very active and applicated teammate`,
+                descriptionRef: `https://www.unimet.edu.ve/`,
+                downloadText: 'See the site',
                 downloadName: '',
             },
         ]

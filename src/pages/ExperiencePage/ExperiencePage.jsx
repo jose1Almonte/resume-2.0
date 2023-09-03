@@ -7,11 +7,9 @@ export default function ExperiencePage() {
 
   return (
     <p>
-
+      <ExperiencePoints title={'My Own Projects (I participated)'} points={experiencePoints.myOwnProjects}/>
       <ExperiencePoints title={'Courses'} points={experiencePoints.coursePoints}/>
       <ExperiencePoints title={'Academic travel'} points={experiencePoints.academyPoints}/>
-
-    {/* <h1>Academic travel</h1> */}
 
     </p>
   )
