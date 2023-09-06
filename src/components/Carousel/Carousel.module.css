@@ -17,9 +17,9 @@
     height: 100%;
 }
 
-.linkStyles :hover {
+/* .linkStyles :hover {
     transform: scale(1.1);
-}
+} */
 
 .imagesContainer div {
     position: absolute;
@@ -28,14 +28,27 @@
     align-self: center;
     transition: width 0.45s ease, height 0.45s ease; /* Transición suave para el cambio de tamaño */
     overflow: hidden;
+    /* transition: transform 0.45s ease; */
 }
+
+/* .imagesContainer div:hover {
+    transform: scale(1.1);
+} */
 
 .imageSelected {
     height:100%;
 }
 
+.imageSelected:hover {
+    height:103%;
+}
+
 .imageNotSelected {
     height:70%;
+}
+
+.imageNotSelected:hover {
+    height:73%;
 }
 
 .imagesContainer div img {
