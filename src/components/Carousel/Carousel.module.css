@@ -1,3 +1,4 @@
+
 .imagesContainer {
     position: relative;
     display: flex;
@@ -8,6 +9,9 @@
     margin: 0 auto;
     margin-top: 3vh;
 }
+/* .imagesContainer:hover {
+    transform: scale(1.1);
+} */
 
 .imagesContainer div {
     position: absolute;
@@ -17,6 +21,15 @@
     transition: width 0.45s ease, height 0.45s ease; /* Transición suave para el cambio de tamaño */
     overflow: hidden;
 }
+
+.linkImageSelected {
+
+}
+
+.linkImageSelected :hover {
+    transform: scale(1.1);
+}
+
 .imageSelected {
     height:100%;
 
@@ -31,4 +44,22 @@
     width: 100%;
     min-height: 100%;
 }
+
+.imagesContainer div div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagesContainer div div h1 {
+    font-size: 4vw;
+    font-weight: bold; /* Aumenta el grosor del texto */
+    text-shadow: 
+    -2px -2px 0 #000, /* Sombra superior izquierda */
+    2px -2px 0 #000,  /* Sombra superior derecha */
+    -2px 2px 0 #000,  /* Sombra inferior izquierda */
+    2px 2px 0 #000;   /* Sombra inferior derecha */
+    opacity: 0.4;
+}
+
 
