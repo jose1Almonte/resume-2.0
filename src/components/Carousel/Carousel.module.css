@@ -8,10 +8,18 @@
     aspect-ratio: 1.5;   
     margin: 0 auto;
     margin-top: 3vh;
+    /* background-color: red; */
 }
-/* .imagesContainer:hover {
+
+.linkStyles {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+}
+
+.linkStyles :hover {
     transform: scale(1.1);
-} */
+}
 
 .imagesContainer div {
     position: absolute;
@@ -22,17 +30,8 @@
     overflow: hidden;
 }
 
-.linkImageSelected {
-
-}
-
-.linkImageSelected :hover {
-    transform: scale(1.1);
-}
-
 .imageSelected {
     height:100%;
-
 }
 
 .imageNotSelected {

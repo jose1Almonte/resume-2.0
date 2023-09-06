@@ -28,11 +28,11 @@ export function Carousel() {
     <div className={Styles.imagesContainer}>
 
     {images.map((image, index) => (
-      // <Link key={index} to={image.href} target='_blank' className={Styles.linkImageSelected}>
+      
       <Motion
-        key={index}
-        defaultStyle={{ translateX: selectedIndex === index ? 0 : 110 }}
-        style={{ translateX: spring(selectedIndex === index ? 0 : (index + 1) === selectedIndex ? -103 : (index - 1) === selectedIndex ? 103   : index < selectedIndex ? -150 : 150)}}
+      key={index}
+      defaultStyle={{ translateX: selectedIndex === index ? 0 : 110 }}
+      style={{ translateX: spring(selectedIndex === index ? 0 : (index + 1) === selectedIndex ? -103 : (index - 1) === selectedIndex ? 103   : index < selectedIndex ? -150 : 150)}}
       >
         {(style) => (
           <div
@@ -40,16 +40,19 @@ export function Carousel() {
             style={{ transform: `translateX(${style.translateX}%)`}}
           
             >
+          <Link to={image.href} 
+          target='_blank' 
+          className={Styles.linkStyles}>
           <img
             src={image.image}
             />
           <div className='gradientGreyLayer'>
             <h1>{image.definition}</h1>
           </div>
+          </Link>
           </div>
             )}
       </Motion>
-      // </Link>
     ))}
   </div>
   )
