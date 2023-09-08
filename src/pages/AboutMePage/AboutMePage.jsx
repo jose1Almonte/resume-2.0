@@ -2,6 +2,8 @@ import meOnAvila from '../../images/meOnAvila.jpg';
 import meAndMom from '../../images/meAndMom.jpg';
 import { TitleDescription } from '../../components/TitleDescription/TitleDescription';
 import { useWindowWidth } from '../../hooks/useWindowWidth';
+import Styles from './AboutMePage.module.css'
+import {useState, useEffect} from 'react'
 
 export default function AboutMePage() {
 
@@ -18,10 +20,35 @@ export default function AboutMePage() {
   Additionally, I find solace in physical training as a means to alleviate the challenges that weigh on my mind. Taking care of my body not only benefits my overall well-being but also provides a valuable outlet for stress relief. Furthermore, I occasionally indulge in playing video games, as it allows me to unwind and reward myself after a productive day of hard work.`
 
   const {windowWidth} = useWindowWidth();
+
+  const [borderRadius, setBorderRadius] = useState('60% 40% 30% 70%/60% 30% 70% 40%');
+
+  useEffect(() => {
+    const borderRadiusValues = [
+      '60% 40% 30% 70%/60% 30% 70% 40%',
+      '40% 60% 70% 30%/30% 70% 40% 60%',
+      '30% 70% 60% 40%/70% 30% 40% 60%',
+      '70% 30% 40% 60%/60% 40% 70% 30%',
+      // Add more borderRadius values as desired
+    ];
+
+    let currentIndex = 0;
+
+    const intervalId = setInterval(() => {
+      setBorderRadius(borderRadiusValues[currentIndex]);
+      currentIndex = (currentIndex + 1) % borderRadiusValues.length;
+    }, 5000); // Cambia cada 5 segundos (ajusta este valor según tus preferencias)
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <>
-    <TitleDescription imageURL={windowWidth > 210 ? meOnAvila : meAndMom} paragraphText={whoIAmText} titleText={'Who I am?'}/>
-    <TitleDescription imageURL={windowWidth > 210 ? meOnAvila : meAndMom} paragraphText={hobbiesText} titleText={'Hobbies'}/>
+    {/* <TitleDescription imageURL={windowWidth > 210 ? meOnAvila : meAndMom} paragraphText={whoIAmText} titleText={'Who I am?'}/>
+    <TitleDescription imageURL={windowWidth > 210 ? meOnAvila : meAndMom} paragraphText={hobbiesText} titleText={'Hobbies'}/> */}
+    <div className={Styles.heroImg} style={{
+        borderRadius: borderRadius,
+      }}></div>
     </>
   )
 }
