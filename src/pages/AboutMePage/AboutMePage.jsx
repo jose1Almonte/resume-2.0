@@ -4,6 +4,7 @@ import { TitleDescription } from '../../components/TitleDescription/TitleDescrip
 import { useWindowWidth } from '../../hooks/useWindowWidth';
 import Styles from './AboutMePage.module.css'
 import {useState, useEffect} from 'react'
+import { useAnimationContainer } from '../../hooks/useAnimationContainer';
 
 export default function AboutMePage() {
 
@@ -21,26 +22,27 @@ export default function AboutMePage() {
 
   const {windowWidth} = useWindowWidth();
 
-  const [borderRadius, setBorderRadius] = useState('60% 40% 30% 70%/60% 30% 70% 40%');
+  const {borderRadius} = useAnimationContainer()
+  // const [borderRadius, setBorderRadius] = useState('60% 40% 30% 70%/60% 30% 70% 40%');
 
-  useEffect(() => {
-    const borderRadiusValues = [
-      '60% 40% 30% 70%/60% 30% 70% 40%',
-      '40% 60% 70% 30%/30% 70% 40% 60%',
-      '30% 70% 60% 40%/70% 30% 40% 60%',
-      '70% 30% 40% 60%/60% 40% 70% 30%',
-      // Add more borderRadius values as desired
-    ];
+  // useEffect(() => {
+  //   const borderRadiusValues = [
+  //     '60% 40% 30% 70%/60% 30% 70% 40%',
+  //     '40% 60% 70% 30%/30% 70% 40% 60%',
+  //     '30% 70% 60% 40%/70% 30% 40% 60%',
+  //     '70% 30% 40% 60%/60% 40% 70% 30%',
+  //     // Add more borderRadius values as desired
+  //   ];
 
-    let currentIndex = 0;
+  //   let currentIndex = 0;
 
-    const intervalId = setInterval(() => {
-      setBorderRadius(borderRadiusValues[currentIndex]);
-      currentIndex = (currentIndex + 1) % borderRadiusValues.length;
-    }, 5000); // Cambia cada 5 segundos (ajusta este valor según tus preferencias)
+  //   const intervalId = setInterval(() => {
+  //     setBorderRadius(borderRadiusValues[currentIndex]);
+  //     currentIndex = (currentIndex + 1) % borderRadiusValues.length;
+  //   }, 5000); // Cambia cada 5 segundos (ajusta este valor según tus preferencias)
 
-    return () => clearInterval(intervalId);
-  }, []);
+  //   return () => clearInterval(intervalId);
+  // }, []);
 
   return (
     <>
@@ -49,6 +51,8 @@ export default function AboutMePage() {
     <div className={Styles.heroImg} style={{
         borderRadius: borderRadius,
       }}></div>
+
+    {windowWidth}
     </>
   )
 }

@@ -8,8 +8,11 @@ import { useWindowWidth } from '../../hooks/useWindowWidth'
 import { NavbarMobile } from '../../vectors/navBarMobile'
 import NavbarMobileModal from '../Modals/NavbarMobileModal'
 import { useState } from 'react'
+import { useAnimationContainer } from '../../hooks/useAnimationContainer'
 
 export default function Navbar() {
+
+  const {borderRadius} = useAnimationContainer()
 
   const leftSideOptions = [
     {
@@ -39,7 +42,7 @@ export default function Navbar() {
       {windowWidth > 500 ? (
         <>
           <div className={Styles.NavbarContainer}>
-            <NavbarBackGround className={Styles.NavbarBackGround}/>
+            {/* <NavbarBackGround className={Styles.NavbarBackGround}/> */}
 
             <header className={Styles.navbarOptions}>
               <ul className={Styles.leftOptions}>
@@ -56,7 +59,7 @@ export default function Navbar() {
 
               </ul>
 
-              <Link to={HOME_URL} className={Styles.rigthOptions}>
+              <Link to={HOME_URL} className={Styles.rigthOptions} style={{borderRadius: borderRadius}}>
                   <img src={photoProfile}/>
               </Link>
             </header>

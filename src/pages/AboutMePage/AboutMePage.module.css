@@ -1,14 +1,14 @@
 .heroImg {
     border-color: rgb(58, 62, 65);
     background-image: url(src/images/meOnAvila.jpg);
-    animation: morph 8s ease-in-out infinite;
+    /* animation: morph 8s ease-in-out infinite; */
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 3px solid #2d2e32;
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    height: 35rem;
+    border: 3px solid rgba(0,0,0,1);
+    /* border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; */
+    height: 35vw;
     position: relative;
-    transition: all 4s ease-in-out;
-    width: 35rem;
+    transition: all 2s ease-in-out;
+    width: 35vw;
 }

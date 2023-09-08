@@ -4,7 +4,10 @@
     display: flex;
     justify-content: 'center';
     /* height: 650px; */
-    width: 70%; 
+    /* width: 70%;  */
+    height: 80vh;
+    /* max-height: 1.5*100vw; */
+    max-width: 100vw;
     aspect-ratio: 1.5;   
     margin: 0 auto;
     margin-top: 3vh;
@@ -74,4 +77,10 @@
     opacity: 0.4;
 }
 
+@media (max-width: 500px) {
+    .imagesContainer {
+        height: auto;
+        width: 80vw;
+    }
+}
 
