@@ -46,11 +46,11 @@ export default function AboutMePage() {
 
   return (
     <>
-    {/* <TitleDescription imageURL={windowWidth > 210 ? meOnAvila : meAndMom} paragraphText={whoIAmText} titleText={'Who I am?'}/>
-    <TitleDescription imageURL={windowWidth > 210 ? meOnAvila : meAndMom} paragraphText={hobbiesText} titleText={'Hobbies'}/> */}
-    <div className={Styles.heroImg} style={{
-        borderRadius: borderRadius,
-      }}></div>
+    {/* <div className={Styles.heroImg} style={{
+      borderRadius: borderRadius,
+    }}></div> */}
+    <TitleDescription imageURL={windowWidth > 210 ? meOnAvila : meAndMom} paragraphText={whoIAmText} titleText={'Who I am?'}/>
+    <TitleDescription imageURL={windowWidth > 210 ? meOnAvila : meAndMom} paragraphText={hobbiesText} titleText={'Hobbies'}/>
 
     {windowWidth}
     </>
