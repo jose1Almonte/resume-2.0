@@ -3,7 +3,7 @@ import { NavbarBackGround } from '../../vectors/NavbarBackGround'
 import Styles from './Navbar.module.css'
 import { Link } from 'react-router-dom'
 import {HOME_URL, SKILLS_URL, ABOUT_URL, EXPERIENCE_URL, CONTACT_URL} from '../../constants/urls.js'
-import photoProfile from '../../images/meOnAvila.jpg'
+import profile from '../../images/Profile.png'
 import { useWindowWidth } from '../../hooks/useWindowWidth'
 import { NavbarMobile } from '../../vectors/navBarMobile'
 import NavbarMobileModal from '../Modals/NavbarMobileModal'
@@ -60,11 +60,12 @@ export default function Navbar() {
               </ul>
 
               <Link to={HOME_URL} className={Styles.rigthOptions} style={{borderRadius: borderRadius}}>
-                  <img src={photoProfile}/>
+                  <img src={profile}/>
               </Link>
             </header>
-
           </div>
+
+          <div className={Styles.height15vh}></div>
         </>
       ) : (
         <div className={Styles.navbarMobile}>

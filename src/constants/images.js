@@ -1,6 +1,7 @@
 // import me from '../images/me.jpg'
 // import meAndMom from '../images/meAndMom.jpg'
 // import meWithCompany from '../images/meWithCompany.jpg'
+import profile from '../images/Profile.png'
 import meOnAvila from '../images/meOnAvila.jpg'
 import workingOnNavbar from '../images/workingOnNavbar.png'
 import rm1 from '../images/rm1.png'
@@ -11,6 +12,11 @@ import carteleraCaracas2 from '../images/carteleraCaracas2.png'
 import onibusClientProfile from '../images/onibusClientProfile.jpg'
 
 export const images = [
+    {
+        image: profile,
+        definition: '',
+        href: 'https://www.linkedin.com/in/jos%C3%A9-antonio-almonte-hern%C3%A1ndez-1a32b528a/',
+    },
     {
         image: meOnAvila,
         definition: '',
