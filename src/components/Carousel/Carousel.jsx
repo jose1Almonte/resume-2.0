@@ -47,7 +47,7 @@ export function Carousel() {
             src={image.image}
             />
           <div className='gradientGreyLayer'>
-            <h1>{image.definition}</h1>
+            {/* <h1>{image.definition}</h1> */}
           </div>
           </Link>
           </div>

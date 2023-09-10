@@ -16,19 +16,19 @@ export default function Navbar() {
 
   const leftSideOptions = [
     {
-      href: ABOUT_URL,
+      href: 'about',
       text: 'About me',
     },
     {
-      href: SKILLS_URL,
+      href: 'skills',
       text: 'skills',
     },
     {
-      href: EXPERIENCE_URL,
+      href: 'experience',
       text: 'Experience',
     },
     {
-      href: CONTACT_URL,
+      href: 'contact',
       text: 'Contact me',
     },
   ]
@@ -36,6 +36,13 @@ export default function Navbar() {
   const {windowWidth} = useWindowWidth()
 
   const [showNavbar, setShowNavbar] = useState(false);
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <>
@@ -50,9 +57,12 @@ export default function Navbar() {
                 {
                   leftSideOptions.map((option, index) => (
                     <li key={index}>
-                      <Link to={option.href} className={Styles.Link}>
+                      <button className={Styles.Link} onClick={() => scrollToSection(option.href)}>
                         <span>{option.text}</span>
-                      </Link>
+                      </button>
+                      {/* <Link to={option.href} className={Styles.Link}>
+                        <span>{option.text}</span>
+                      </Link> */}
                     </li>
                   ))
                 }
