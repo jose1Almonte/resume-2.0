@@ -31,11 +31,16 @@
     flex-wrap: wrap;
 }
 
+.about {
+    height: 15vh;
+}
+
 .section {
-    min-height: 95vh;
+    min-height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-color: red; */
     /* background-color: green; */
 }
 
@@ -48,7 +53,7 @@
     background-size: cover;
     border: 3px solid rgba(255,255,255,0.5);
     /* border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; */
-    height: 70vh;
+    height: 40vh;
     max-height: 45vw;
     aspect-ratio: 1;
     position: relative;
@@ -59,11 +64,36 @@
 .firstElement {
     /* background-color: red; */
     /* text-align: justify; */
+    max-width: 35vw;
+    margin-right: 5vw;
+}
+
+.firstElement div {
+    display: flex;
+    width: 25vh;
+    justify-content: space-around;
 }
 
 .firstElement h1 {
     font-size: 5vw;
+    font-weight: bold; /* Aumenta el grosor del texto */
+    margin: 0;
+}
 
+.linkedin_icon {
+    /* color: white; Color predeterminado */
+    transition: all 1s ease; /* Transición de color suave */
+  }
+  
+.linkedin_icon:hover {
+  transform: scale(1.1); /* Color azul cuando el mouse está encima */
+}
+
+.firstElement h2 {
+    font-size: 1.5vw;
+    color: rgba(255,255,255,0.5);
+    /* font-weight: bold; Aumenta el grosor del texto */
+    margin-top: 5vh;
 }
 
 @media (max-width: 500px) {

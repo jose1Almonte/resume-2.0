@@ -40,9 +40,15 @@ export default function Navbar() {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const offset = 15 * window.innerHeight / 100; // Calcula 15vh en píxeles
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: 'smooth',
+      });
     }
   };
+  
 
   return (
     <>
@@ -68,14 +74,13 @@ export default function Navbar() {
                 }
 
               </ul>
-
-              <Link to={HOME_URL} className={Styles.rigthOptions} style={{borderRadius: borderRadius}}>
+              <button className={Styles.rigthOptions} style={{borderRadius: borderRadius}} onClick={() => scrollToSection('about')}>
                   <img src={profile}/>
-              </Link>
+              </button>
             </header>
           </div>
 
-          <div className={Styles.height15vh}></div>
+          {/* <div className={Styles.height15vh}></div> */}
         </>
       ) : (
         <div className={Styles.navbarMobile}>

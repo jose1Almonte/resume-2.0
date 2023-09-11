@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react'
 
 export function useAnimationContainer() {
-    const [borderRadius, setBorderRadius] = useState('60% 40% 30% 70%/60% 30% 70% 40%');
+    const [borderRadius, setBorderRadius] = useState('50% 50% 50% 50%');
 
     useEffect(() => {
       const borderRadiusValues = [
         '60% 40% 30% 70%/60% 30% 70% 40%',
         '40% 60% 70% 30%/30% 70% 40% 60%',
-        // '30% 70% 60% 40%/70% 30% 40% 60%',
-        // '70% 30% 40% 60%/60% 40% 70% 30%',
+        '30% 70% 60% 40%/70% 30% 40% 60%',
+        '70% 30% 40% 60%/30% 70% 60% 40%',
+        '25% 25% 25% 25%/25% 25% 25% 25%',
+        '50% 50% 50% 50%',
         // Add more borderRadius values as desired
       ];
   
