@@ -14,6 +14,8 @@ import { AiFillGithub } from "react-icons/ai";
 import { CiLinkedin } from "react-icons/ci";
 import {Link} from 'react-router-dom'
 import { useState } from 'react';
+import { DiHtml5, DiCss3, DiJsBadge } from "react-icons/di";
+
 export function HomePage() {
 
   // const {windowWidth} = useWindowWidth();
@@ -48,10 +50,11 @@ export function HomePage() {
       <Heptagon urlPage={'https://microproyecto2-e4653.web.app/'} urlImage={carteleraCaracas}/>
     </div> */}
     {/* <div className={Styles.about} id='about'/> */}
-    <div className={Styles.section} id='about'>
+
+    <div className={`${Styles.section} ${Styles.firstSection}`} id='about'>
       <div className={Styles.firstElement}>
         <h1>Front-End React Developer <FcCursor size={windowWidth/18}/> </h1>
-        <h2>Hi, I'm José Almonte. A passionate Front-end React Developer based in Caracas, Venezuela. <RxGlobe color='#61DBFB'/></h2>
+        <h2>Hi, I&apos;m José Almonte. A passionate Front-end React Developer based in Caracas, Venezuela. <RxGlobe color='#61DBFB'/></h2>
         <div>
           <Link to='https://www.linkedin.com/in/jos%C3%A9-antonio-almonte-hern%C3%A1ndez-1a32b528a/' target='_blank' className={Styles.redirect}>
             <h2 
@@ -82,7 +85,15 @@ export function HomePage() {
       }}/>
     </div>
 
-    <h1 id='skills'>skills</h1>
+    <div className={`${Styles.section} ${Styles.secondSection}`} id='skills'>
+      <div className={Styles.techStack} style={{height: windowWidth/20}}>
+        
+        <DiHtml5 color='#F06529' size={windowWidth/30}/>
+        <DiCss3 color='#264de4' size={windowWidth/30}/>
+        <DiJsBadge color='#F0DB4F' size={windowWidth/30}/>
+      </div>
+
+    </div>
 
     <h1 id='experience'>experience</h1>
 
