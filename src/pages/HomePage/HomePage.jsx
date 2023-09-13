@@ -18,6 +18,7 @@ import { DiHtml5, DiCss3, DiJsBadge, DiReact, DiFirebase } from "react-icons/di"
 import github from "react-useanimations/lib/github";
 import UseAnimations from 'react-useanimations';
 import twitter from "react-useanimations/lib/twitter";
+import ReactCurvedText from 'react-curved-text';
 
 export function HomePage() {
 
@@ -89,7 +90,7 @@ export function HomePage() {
       }}/>
     </div>
 
-    <div className={`${Styles.section} ${Styles.secondSection}`} id='skills'>
+    <div className={`${Styles.section}`} id='skills'>
       <div className={Styles.techStack} style={{height: windowWidth/15}}>
         
         <div className="">
@@ -111,6 +112,23 @@ export function HomePage() {
         <UseAnimations animation={twitter} strokeColor='white'  size={56} autoplay={true} loop={true} speed={0}/> */}
 
       </div>
+
+      
+
+  <ReactCurvedText width='300'
+    height={300}
+    cx={150}
+    cy={150}
+    rx={100}
+    ry={100}
+    startOffset={50}
+    reversed={false}
+    text='Front-End Web Developer'
+    textProps={{"style": {"fontSize": "54"}}}
+    textPathProps={{"fill": "#ffffff"}}
+    tspanProps={{"dy": "44"}}
+    ellipseProps={null}
+    svgProps={{"style": {"transform": "rotate(0deg)"}}} />
 
     </div>
 

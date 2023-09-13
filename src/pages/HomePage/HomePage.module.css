@@ -49,26 +49,6 @@
     /* background-color: red; */
 }
 
-.techStack {
-    display: flex;
-    /* background-color: grey; */
-    height: 15vh;
-    /* justify-content: space-between; */
-    align-items: flex-end;
-    /* overflow: hidden; */
-    /* justify-content: flex-start; */
-}
-
-.techStack div {
-    margin-right: 1.5vw;
-    margin-left: 1.5vw;
-}
-
-.techStack div h1 {
-    font-size: 1.5vw;
-    font-weight: normal;
-    white-space: nowrap;
-}
 
 .heroImg {
     border-color: rgb(58, 62, 65);
@@ -121,6 +101,32 @@
     color: rgba(255,255,255,0.5);
     /* font-weight: bold; Aumenta el grosor del texto */
     margin-top: 5vh;
+}
+
+.techStack {
+    display: flex;
+    /* background-color: grey; */
+    height: 15vh;
+    /* justify-content: space-between; */
+    align-items: flex-end;
+    /* overflow: hidden; */
+    /* justify-content: flex-start; */
+}
+
+.techStack div {
+    margin-right: 1.5vw;
+    margin-left: 1.5vw;
+}
+
+.techStack div h1 {
+    font-size: 1.5vw;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.aboutMe {
+    min-height: 70vh;
+    background-color: red;
 }
 
 @media (max-width: 500px) {
