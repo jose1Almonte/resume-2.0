@@ -14,14 +14,18 @@ import { AiFillGithub } from "react-icons/ai";
 import { CiLinkedin } from "react-icons/ci";
 import {Link} from 'react-router-dom'
 import { useState } from 'react';
-import { DiHtml5, DiCss3, DiJsBadge } from "react-icons/di";
+import { DiHtml5, DiCss3, DiJsBadge, DiReact, DiFirebase } from "react-icons/di";
+import github from "react-useanimations/lib/github";
+import UseAnimations from 'react-useanimations';
+import twitter from "react-useanimations/lib/twitter";
 
 export function HomePage() {
 
   // const {windowWidth} = useWindowWidth();
   const {borderRadius} = useAnimationContainer();
   const {windowWidth} = useWindowWidth();
- 
+  const divisorNumber = 30;
+
   const [isHovered, setIsHovered] = useState({
     linkedIn: false,
     gitHub: false,
@@ -63,7 +67,7 @@ export function HomePage() {
             onMouseLeave={() => {handleMouse('linkedIn', false)}}>
               <CiLinkedin 
               color={isHovered.linkedIn ? '#0e76A8' : 'rgba(255,255,255,0.5)'} 
-              size={windowWidth/30}/>
+              size={windowWidth/divisorNumber}/>
             </h2>
           </Link>
           <Link to='https://github.com/jose1Almonte' target='_blank' className={Styles.redirect}>
@@ -73,7 +77,7 @@ export function HomePage() {
             onMouseLeave={() => {handleMouse('gitHub', false)}}>
               <AiFillGithub 
               color={isHovered.gitHub ? 'white' : 'rgba(255,255,255,0.5)'} 
-              size={windowWidth/30}/>
+              size={windowWidth/divisorNumber}/>
             </h2>
           </Link>
 
@@ -86,11 +90,26 @@ export function HomePage() {
     </div>
 
     <div className={`${Styles.section} ${Styles.secondSection}`} id='skills'>
-      <div className={Styles.techStack} style={{height: windowWidth/20}}>
+      <div className={Styles.techStack} style={{height: windowWidth/15}}>
         
-        <DiHtml5 color='#F06529' size={windowWidth/30}/>
-        <DiCss3 color='#264de4' size={windowWidth/30}/>
-        <DiJsBadge color='#F0DB4F' size={windowWidth/30}/>
+        <div className="">
+          <h1>Tech Stack</h1>
+        </div>
+
+        <div className="">
+          <DiHtml5 color='#F06529' size={windowWidth/divisorNumber}/>
+          <DiCss3 color='#264de4' size={windowWidth/divisorNumber}/>
+          <DiJsBadge color='#F0DB4F' size={windowWidth/divisorNumber}/>
+        </div>
+        
+        <div className="">
+          <DiReact color='#61DBFB' size={windowWidth/divisorNumber}/>
+          <DiFirebase color='#FFA611' size={windowWidth/divisorNumber}/>
+        </div>
+        
+        {/* <UseAnimations animation={github} strokeColor='white' size={56} autoplay={true} loop={true} speed={0}/>
+        <UseAnimations animation={twitter} strokeColor='white'  size={56} autoplay={true} loop={true} speed={0}/> */}
+
       </div>
 
     </div>
