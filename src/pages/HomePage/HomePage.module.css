@@ -124,11 +124,67 @@
     white-space: nowrap;
 }
 
-.aboutMe {
-    min-height: 70vh;
-    background-color: red;
+.aboutBox {
+    display: flex;
+    height: 70vh;
+    /* background-color: green; */
 }
 
+.middleBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.desktopContainer {
+    /* background-color: red; */
+    background-image: url(../../images/desktop.png);
+    background-position: 0%;
+    background-size: cover;
+    width: 80%;
+    height: 80%;
+    border-radius: 50px
+}
+.rotating_vector {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 50% 50% 50% 50%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(42,42,42,0.96);
+    animation: rotate 10s linear infinite; /* Aquí estamos aplicando la animación */
+  }
+
+.comandLineIcon {
+  position: absolute;
+  transform-origin: center; /* Establecemos el punto de origen de la transformación en el centro */
+  animation: rotateLeft 10s linear infinite; /* Animación para contrarrestar la rotación del contenedor */
+}
+  
+@keyframes rotateLeft {
+  0% {
+    transform: rotate(0deg); /* Inicialmente, sin rotación */
+  }
+  100% {
+    transform: rotate(-360deg); /* Rotación completa en sentido horario (una vuelta completa) */
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); /* Inicialmente, sin rotación */
+  }
+  100% {
+    transform: rotate(360deg); /* Rotación completa en sentido horario (una vuelta completa) */
+  }
+}
 @media (max-width: 500px) {
     /* .row {
         position: absolute;

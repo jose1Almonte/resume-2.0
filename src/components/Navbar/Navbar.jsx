@@ -16,16 +16,16 @@ export default function Navbar() {
 
   const leftSideOptions = [
     {
+      href: 'home',
+      text: 'Home',
+    },
+    {
       href: 'about',
-      text: 'About me',
+      text: 'About',
     },
     {
-      href: 'skills',
-      text: 'skills',
-    },
-    {
-      href: 'experience',
-      text: 'Experience',
+      href: 'projects',
+      text: 'Projects',
     },
     {
       href: 'contact',
