@@ -10,6 +10,7 @@ import { useState } from 'react';
 import { DiHtml5, DiCss3, DiJsBadge, DiReact, DiFirebase } from "react-icons/di";
 import { FcCommandLine } from "react-icons/fc";
 import ReactCurvedText from 'react-curved-text';
+import ProjectCard from '../../components/ProjectCard/ProjectCard';
 
 export function HomePage() {
 
@@ -113,7 +114,7 @@ export function HomePage() {
         </div>
 
         <div className={`${Styles.middleBox} ${Styles.centerAll}`}>
-          <p className={`${Styles.title} ${Styles.textJustified} ${Styles.marginBottom} ${Styles.marginHorizontal}`}>About Me</p>
+          <p className={`${Styles.title} ${Styles.textJustified} ${Styles.marginBottom} ${Styles.marginHorizontal}`}>ABOUT ME</p>
           <p className={`${Styles.subtitle} ${Styles.marginVertical} ${Styles.marginHorizontal}`}>A dedicated Front-end Developer
 based in Caracas, Venezuela 📍</p>
           <p className={`${Styles.description} ${Styles.marginTop} ${Styles.marginHorizontal}`}>As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications.</p>
@@ -126,8 +127,12 @@ based in Caracas, Venezuela 📍</p>
     </div>
 
     <div className={`${Styles.section}`} id='projects'>
-      projects
+      <p className={`${Styles.title} ${Styles.textJustified} ${Styles.marginTop}`}>PORTFOLIO</p>
+      <p className={`${Styles.subtitle} ${Styles.marginVertical}`}>Each project is a unique piece of development 🧩</p>
+      <div className={Styles.cardsContainer}>
+        <ProjectCard/>
       </div>
+    </div>
 
     <h1 id='contact'>contact</h1>
 

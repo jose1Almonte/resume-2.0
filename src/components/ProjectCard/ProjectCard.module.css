@@ -1,0 +1,36 @@
+.cardContainer {
+    height: 60vh;
+    aspect-ratio: 2;
+    min-width: 70vw;
+    max-width: 90vw;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 0px;
+}
+
+.displayFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectImage {
+    width: 55%;
+    height: 90%;
+    /* border-radius: 50px; */
+    /* overflow: hidden; */
+    
+    background-image: url(../../images/capturaDePrueba.png);
+    background-size: 100% auto; /* Establecemos un ancho del 100% del contenedor */
+    background-position: center top; /* Inicialmente muestra la parte superior de la imagen */
+    transition: background-position 7s ease; /* Agregamos una transición a background-position */
+    border-radius: 25px; /* Agregamos esquinas redondeadas de 10px */
+}
+
+.description {
+    width: 40%;
+    height: 90%;
+}
+
+.projectImage:hover {
+    background-position: center bottom; /* Muestra la parte inferior de la imagen al pasar el mouse */
+}

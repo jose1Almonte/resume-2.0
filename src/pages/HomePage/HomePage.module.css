@@ -10,9 +10,9 @@
      2px -2px 0 rgb(0,0,0,0.5), /* Sombra superior derecha */
     -2px  2px 0 rgb(0,0,0,0.5), /* Sombra inferior izquierda */
      2px  2px 0 rgb(0,0,0,0.5); /* Sombra inferior derecha */
-    font-size: 40px;
-}
-
+     font-size: 2vw;
+    }
+    
 .textJustified {
     /* justify-self:left; */
     align-self: first baseline;
@@ -20,8 +20,8 @@
 }
 
 .subtitle{
+    font-size: 2.3vw;
     /* text-indent: 0.5em; */
-    font-size: 2vw;
     color: rgb(255, 255, 255, 1);
     font-weight: bold;
 }
@@ -222,6 +222,12 @@
   position: absolute;
   transform-origin: center; /* Establecemos el punto de origen de la transformación en el centro */
   animation: rotateLeft 10s linear infinite; /* Animación para contrarrestar la rotación del contenedor */
+}
+
+.cardsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
   
 @keyframes rotateLeft {
