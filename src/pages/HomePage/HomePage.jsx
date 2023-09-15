@@ -88,11 +88,11 @@ export function HomePage() {
       </div>
 
       <div className={Styles.aboutBox}>
-        <div className={Styles.middleBox}>
+        <div className={`${Styles.middleBox} ${Styles.displayFlex}`}>
 
           <div className={Styles.desktopContainer}/>
-          <div className={Styles.rotating_vector} style={{width: windowWidth/6.6}}>
-          <FcCommandLine className={Styles.comandLineIcon} size={(windowWidth/divisorNumberForIcons)+20}/>
+          <div className={Styles.rotating_vector} style={{width: windowWidth/7.6}}>
+          <FcCommandLine className={Styles.comandLineIcon} size={(windowWidth/divisorNumberForIcons)+10}/>
           <ReactCurvedText 
             width= {windowWidth/divisorNumberForCircle}
             height={windowWidth/divisorNumberForCircle}
@@ -101,18 +101,22 @@ export function HomePage() {
             rx={(windowWidth/divisorNumberForCircle)/3}
             ry={(windowWidth/divisorNumberForCircle)/3}
             startOffset={0}
-            reversed={false}
+            reversed={true}
             text='Front-End Web Developer'
-            textProps={{"style": {"fontSize": windowWidth/42}}}
-            textPathProps={{"fill": "#ffffff"}}
-            tspanProps={{"dy": (windowWidth/divisorNumberForCircle)/6.82}}
+            textProps={{"style": {"fontSize": windowWidth/45, 'fontWeight': 'bold'}}}
+            textPathProps={{"fill": "rgba(255,255,255,0.92)"}}
+            tspanProps={{"dy": (windowWidth/divisorNumberForCircle)/1000}}
             ellipseProps={null}
             svgProps={{"style": {"transform": "rotate(0deg)"}}} />
 
           </div>
         </div>
 
-        <div className={Styles.middleBox}>
+        <div className={`${Styles.middleBox} ${Styles.centerAll}`}>
+          <p className={`${Styles.title} ${Styles.textJustified} ${Styles.marginBottom} ${Styles.marginHorizontal}`}>About Me</p>
+          <p className={`${Styles.subtitle} ${Styles.marginVertical} ${Styles.marginHorizontal}`}>A dedicated Front-end Developer
+based in Caracas, Venezuela 📍</p>
+          <p className={`${Styles.description} ${Styles.marginTop} ${Styles.marginHorizontal}`}>As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications.</p>
 
         </div>
       </div>
@@ -121,7 +125,9 @@ export function HomePage() {
 
     </div>
 
-    <h1 id='projects'>projects</h1>
+    <div className={`${Styles.section}`} id='projects'>
+      projects
+      </div>
 
     <h1 id='contact'>contact</h1>
 

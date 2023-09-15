@@ -1,7 +1,53 @@
 
 .title{
-    color: black;
+    /* color: black; */
+    color: rgb(171, 171, 239);
+    font-weight: bold;
+    /* -webkit-text-stroke: 0.2px #000; Grosor y color del borde (Webkit/Blink) */
+    /* text-stroke: 2px #000; Grosor y color del borde (estándar) */
+    text-shadow: 
+    -2px -2px 0 rgb(0,0,0,0.5), /* Sombra superior izquierda */
+     2px -2px 0 rgb(0,0,0,0.5), /* Sombra superior derecha */
+    -2px  2px 0 rgb(0,0,0,0.5), /* Sombra inferior izquierda */
+     2px  2px 0 rgb(0,0,0,0.5); /* Sombra inferior derecha */
     font-size: 40px;
+}
+
+.textJustified {
+    /* justify-self:left; */
+    align-self: first baseline;
+    /* text-indent: 0.5em; */
+}
+
+.subtitle{
+    /* text-indent: 0.5em; */
+    font-size: 2vw;
+    color: rgb(255, 255, 255, 1);
+    font-weight: bold;
+}
+
+.description{
+    text-indent: 1em;
+    font-size: 1.7vw;
+    color: rgb(255, 255, 255, 0.85);
+}
+
+.marginBottom {
+    margin-bottom: 2vh;
+}
+
+.marginVertical {
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+.marginTop {
+    margin-top: 2vh;
+}
+
+.marginHorizontal {
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .giantBox {
@@ -132,12 +178,22 @@
 
 .middleBox {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 50vw;
     height: 100%;
     /* background-color: red; */
+}
+
+.displayFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerAll {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .desktopContainer {
