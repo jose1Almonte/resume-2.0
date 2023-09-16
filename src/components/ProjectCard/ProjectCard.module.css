@@ -1,8 +1,10 @@
 .cardContainer {
-    height: 60vh;
-    aspect-ratio: 2;
-    min-width: 70vw;
-    max-width: 90vw;
+    /* height: 60vh; */
+    width: 70vw;
+    aspect-ratio: 2.3;
+    max-height: 65vh;
+    min-height: 300px;
+    /* max-width: 90vw; */
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 0px;
 }
@@ -19,18 +21,56 @@
     /* border-radius: 50px; */
     /* overflow: hidden; */
     
-    background-image: url(../../images/capturaDePrueba.png);
+    /* background-image: url(../../images/capturaDePrueba.png); */
     background-size: 100% auto; /* Establecemos un ancho del 100% del contenedor */
     background-position: center top; /* Inicialmente muestra la parte superior de la imagen */
     transition: background-position 7s ease; /* Agregamos una transición a background-position */
     border-radius: 25px; /* Agregamos esquinas redondeadas de 10px */
 }
 
-.description {
+.descriptionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* background-color: red; */
     width: 40%;
     height: 90%;
+    /* background-color: green; */
 }
 
 .projectImage:hover {
     background-position: center bottom; /* Muestra la parte inferior de la imagen al pasar el mouse */
 }
+
+.projectName {
+    font-size: 2vw;
+    font-weight: bold;
+
+}
+
+.projectDate {
+    font-size: 1.3vw;
+    color: rgba(255,255,255,0.7);
+}
+
+.projectDescription {
+    margin-left: 20%;
+    margin-right: 15%;
+    font-size: 1.2vw;
+    /* background-color: yellow; */
+}
+
+.methodologiesBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    min-height: 30px;
+    max-height: 50px;
+    /* background-color: red; */
+}
+
