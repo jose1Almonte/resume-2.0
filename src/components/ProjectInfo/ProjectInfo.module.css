@@ -1,0 +1,15 @@
+.text {
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+    margin-right: 3%;
+    margin-left: 3%;
+    color: white;
+    text-decoration: none;
+    transition: all 0.45s ease;
+}
+
+.text:hover {
+    transform: scale(1.1);
+    color: rgb(255, 255, 255, 0.5);
+}

@@ -11,6 +11,8 @@ import { DiHtml5, DiCss3, DiJsBadge, DiReact, DiFirebase } from "react-icons/di"
 import { FcCommandLine } from "react-icons/fc";
 import ReactCurvedText from 'react-curved-text';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
+// import UseAnimations from 'react-useanimations';
+// import github from "react-useanimations/lib/github";
 
 export function HomePage() {
 
@@ -127,15 +129,21 @@ based in Caracas, Venezuela 📍</p>
     </div>
 
     <div className={`${Styles.section}`} id='projects'>
-      <p className={`${Styles.title} ${Styles.textJustified} ${Styles.marginTop}`}>PORTFOLIO</p>
-      <p className={`${Styles.subtitle} ${Styles.marginVertical}`}>Each project is a unique piece of development 🧩</p>
+      <p className={`${Styles.title} ${Styles.textJustified} ${Styles.portfolio}`}>PORTFOLIO</p>
+      <p className={`${Styles.subtitle} ${Styles.marginVertical} ${Styles.textIndent}`}>Each project is a unique piece of development 🧩</p>
       <div className={Styles.cardsContainer}>
-        <ProjectCard/>
+        <ProjectCard 
+        leftToRight={true} 
+        siteUrl='https://rick-and-morty-site-78b94.web.app/'/>
+        <ProjectCard 
+        leftToRight={false} 
+        siteUrl='https://rick-and-morty-site-78b94.web.app/'/>
       </div>
     </div>
 
     <h1 id='contact'>contact</h1>
-
+    
+    {/* <UseAnimations animation={github} strokeColor='white' size={56} autoplay={true} loop={true} speed={0}/> */}
     </div>
   )
 }
