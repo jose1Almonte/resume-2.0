@@ -1,8 +1,5 @@
 // import React from 'react'
-import { NavbarBackGround } from '../../vectors/NavbarBackGround'
 import Styles from './Navbar.module.css'
-import { Link } from 'react-router-dom'
-import {HOME_URL, SKILLS_URL, ABOUT_URL, EXPERIENCE_URL, CONTACT_URL} from '../../constants/urls.js'
 import profile from '../../images/Profile.png'
 import { useWindowWidth } from '../../hooks/useWindowWidth'
 import { NavbarMobile } from '../../vectors/navBarMobile'
@@ -66,15 +63,12 @@ export default function Navbar() {
                       <button className={Styles.Link} onClick={() => scrollToSection(option.href)}>
                         <span>{option.text}</span>
                       </button>
-                      {/* <Link to={option.href} className={Styles.Link}>
-                        <span>{option.text}</span>
-                      </Link> */}
                     </li>
                   ))
                 }
 
               </ul>
-              <button className={Styles.rigthOptions} style={{borderRadius: borderRadius}} onClick={() => scrollToSection('about')}>
+              <button className={Styles.rigthOptions} style={{borderRadius: borderRadius}} onClick={() => scrollToSection('home')}>
                   <img src={profile}/>
               </button>
             </header>

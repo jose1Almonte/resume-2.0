@@ -11,11 +11,15 @@ import { DiHtml5, DiCss3, DiJsBadge, DiReact, DiFirebase } from "react-icons/di"
 import { FcCommandLine } from "react-icons/fc";
 import ReactCurvedText from 'react-curved-text';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
+import AditionalInformation from '../../components/AditionalInformation/AditionalInformation';
+import UseAnimations from 'react-useanimations';
 // import UseAnimations from 'react-useanimations';
 // import github from "react-useanimations/lib/github";
+import github from "react-useanimations/lib/github";
+import linkedin from "react-useanimations/lib/linkedin";
 
 export function HomePage() {
-
+  const [checked, setChecked] = useState(true);
   // const {windowWidth} = useWindowWidth();
   const {borderRadius} = useAnimationContainer();
   const {windowWidth} = useWindowWidth();
@@ -140,8 +144,32 @@ based in Caracas, Venezuela 📍</p>
         siteUrl='https://rick-and-morty-site-78b94.web.app/'/>
       </div>
     </div>
+    
+    <div className={Styles.section} id='contact'>
+      <div className={Styles.firstBoxContact}>
+        <p>
+        <p className={`${Styles.title} ${Styles.textJustified}`}>CONTACT</p>
+        <p className={`${Styles.subtitle} ${Styles.marginVertical}`}>Don't be shy! Hit me up! 👇</p>
+        </p>
 
-    <h1 id='contact'>contact</h1>
+        <div className={Styles.aditionalInformation}>
+          <AditionalInformation/>
+        </div>
+      </div>
+      <div className={Styles.secondBoxContact}>
+        <p className={Styles.copyrightMessage}>Copyright © 2023. All rights are reserved</p>
+
+        <div style={{display: 'flex'}}>
+          <Link target='_blank' className={Styles.anotherLink} to={'https://github.com/jose1Almonte'}>
+            <UseAnimations strokeColor='white' animation={github} size={windowWidth/divisorNumberForIcons} autoplay={checked} loop={checked} speed={0}/>
+          </Link>
+
+          <Link target='_blank' className={Styles.anotherLink} to={'https://www.linkedin.com/in/jos%C3%A9-antonio-almonte-hern%C3%A1ndez-1a32b528a/'}>
+            <UseAnimations strokeColor='#0e76A8' animation={linkedin} size={windowWidth/divisorNumberForIcons} autoplay={checked} loop={checked} speed={0}/>
+          </Link>
+        </div>
+      </div>
+    </div>
     
     {/* <UseAnimations animation={github} strokeColor='white' size={56} autoplay={true} loop={true} speed={0}/> */}
     </div>
