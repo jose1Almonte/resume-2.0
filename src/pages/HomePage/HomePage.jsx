@@ -13,10 +13,9 @@ import ReactCurvedText from 'react-curved-text';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import AditionalInformation from '../../components/AditionalInformation/AditionalInformation';
 import UseAnimations from 'react-useanimations';
-// import UseAnimations from 'react-useanimations';
-// import github from "react-useanimations/lib/github";
 import github from "react-useanimations/lib/github";
 import linkedin from "react-useanimations/lib/linkedin";
+import profile from '../../images/Profile.png'
 
 export function HomePage() {
   const [checked, setChecked] = useState(true);
@@ -72,7 +71,9 @@ export function HomePage() {
 
       <div className={Styles.heroImg} style={{
         borderRadius: borderRadius,
-      }}/>
+      }}>
+      <img src={profile}/>
+      </div>
     </div>
 
     <div className={`${Styles.section}`} id='about'>
