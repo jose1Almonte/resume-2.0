@@ -3,26 +3,22 @@ import { Link } from 'react-router-dom'
 import { ABOUT_URL, CONTACT_URL, EXPERIENCE_URL, HOME_URL, SKILLS_URL } from '../../constants/urls'
 import Styles from './NavbarMobileModal.module.css'
 
-export default function NavbarMobileModal({showNavbar, setShowNavbar}) {
+export default function NavbarMobileModal({showNavbar, setShowNavbar, scrollToSection}) {
   const leftSideOptions = [
     {
-      href: HOME_URL,
+      href: 'home',
       text: 'Home',
     },
     {
-      href: ABOUT_URL,
-      text: 'About me',
+      href: 'about',
+      text: 'About',
     },
     {
-      href: SKILLS_URL,
-      text: 'skills',
+      href: 'projects',
+      text: 'Projects',
     },
     {
-      href: EXPERIENCE_URL,
-      text: 'Experience',
-    },
-    {
-      href: CONTACT_URL,
+      href: 'contact',
       text: 'Contact me',
     },
   ]
@@ -36,13 +32,12 @@ export default function NavbarMobileModal({showNavbar, setShowNavbar}) {
         <button className = {Styles.closeNavbarButton} onClick={() => {setShowNavbar(!showNavbar)}}>
           <span className = {Styles.closeNavbarText}>Close Navbar</span>
         </button>
-
         {
             leftSideOptions.map((option, index) => (
               <li key={index} className={Styles.option}>
-                <Link to={option.href} className={Styles.link} onClick={() => {setShowNavbar(!showNavbar)}}>
+                <button className={Styles.Link} onClick={() => {scrollToSection(option.href); setShowNavbar(!showNavbar)}}>
                   <span className={Styles.spanMobileNavbarOption}>{option.text}</span>
-                </Link>
+                </button>
               </li>
             ))
           }

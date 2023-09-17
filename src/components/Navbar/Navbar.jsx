@@ -73,17 +73,17 @@ export default function Navbar() {
               </button>
             </header>
           </div>
-
-          {/* <div className={Styles.height15vh}></div> */}
         </>
       ) : (
-        <div className={Styles.navbarMobile}>
+        <div className={Styles.navbarMobileContainer}>
 
+        <div className={Styles.navbarMobile}>
           <button className={Styles.navbarButton} onClick={() => {setShowNavbar(!showNavbar);}}>
             <NavbarMobile className={Styles.vectorStyles} />
           </button>
 
-          <NavbarMobileModal showNavbar={showNavbar} setShowNavbar={setShowNavbar}/>
+          <NavbarMobileModal scrollToSection={scrollToSection} showNavbar={showNavbar} setShowNavbar={setShowNavbar}/>
+        </div>
         </div>
       ) 
       }

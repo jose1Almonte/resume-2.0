@@ -56,21 +56,14 @@
     overflow-x: hidden;
 }
 
-.backGround{
-    /* background-color: #2A2A2A; */
-}
-
 .welcomeMessage {
     text-align: center;
-    /* margin-top: 5vh; */
-    /* margin-bottom: 5vh; */
 }
 
 
 .row {
     display: flex;
     justify-content: space-around;
-    /* margin-bottom: 5vw; */
     background-color: rgba(25,25,25,0.6);
     padding-top: 40px;
     padding-bottom: 40px;
