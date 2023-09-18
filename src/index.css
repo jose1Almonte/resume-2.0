@@ -83,3 +83,7 @@ p {
   font-weight: 400;
   line-height: normal;
 }
+
+.section {
+  min-height: 85vh;
+}

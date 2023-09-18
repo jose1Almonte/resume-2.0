@@ -1,10 +1,7 @@
+import React from "react";
 import Styles from './HomePage.module.css';
 import { useWindowWidth } from '../../hooks/useWindowWidth';
 import { useAnimationContainer } from '../../hooks/useAnimationContainer';
-import { FcCursor } from "react-icons/fc";
-import { RxGlobe } from "react-icons/rx";
-import { AiFillGithub } from "react-icons/ai";
-import { CiLinkedin } from "react-icons/ci";
 import {Link} from 'react-router-dom'
 import { useState } from 'react';
 import { DiHtml5, DiCss3, DiJsBadge, DiReact, DiFirebase } from "react-icons/di";
@@ -15,7 +12,8 @@ import AditionalInformation from '../../components/AditionalInformation/Aditiona
 import UseAnimations from 'react-useanimations';
 import github from "react-useanimations/lib/github";
 import linkedin from "react-useanimations/lib/linkedin";
-import profile from '../../images/Profile.png'
+
+import Home from "../../components/Home/Home";
 
 export function HomePage() {
   const [checked, setChecked] = useState(true);
@@ -25,56 +23,10 @@ export function HomePage() {
   const divisorNumberForIcons = 30;
   const divisorNumberForCircle = 7.7;
 
-  const [isHovered, setIsHovered] = useState({
-    linkedIn: false,
-    gitHub: false,
-  })
-
-  const handleMouse = (name, value) => {
-    setIsHovered({
-      ...isHovered,
-      [name]: value,
-    })
-  }
-
   return (
     <div className={Styles.giantBox}>
 
-    <div className={`${Styles.section} ${Styles.firstSection}`} id='home'>
-      <div className={Styles.firstElement}>
-        <h1>Front-End React Developer <FcCursor size={windowWidth/18}/> </h1>
-        <h2>Hi, I&apos;m José Almonte. A passionate Front-end React Developer based in Caracas, Venezuela. <RxGlobe color='#61DBFB'/></h2>
-        <div>
-          <Link to='https://www.linkedin.com/in/jos%C3%A9-antonio-almonte-hern%C3%A1ndez-1a32b528a/' target='_blank' className={Styles.redirect}>
-            <h2 
-            className={Styles.linkedin_icon}
-            onMouseEnter={() => {handleMouse('linkedIn', true)}} 
-            onMouseLeave={() => {handleMouse('linkedIn', false)}}>
-              <CiLinkedin 
-              color={isHovered.linkedIn ? '#0e76A8' : 'rgba(255,255,255,0.5)'} 
-              size={windowWidth/divisorNumberForIcons}/>
-            </h2>
-          </Link>
-          <Link to='https://github.com/jose1Almonte' target='_blank' className={Styles.redirect}>
-            <h2 
-            className={Styles.linkedin_icon}
-            onMouseEnter={() => {handleMouse('gitHub', true)}} 
-            onMouseLeave={() => {handleMouse('gitHub', false)}}>
-              <AiFillGithub 
-              color={isHovered.gitHub ? 'white' : 'rgba(255,255,255,0.5)'} 
-              size={windowWidth/divisorNumberForIcons}/>
-            </h2>
-          </Link>
-
-        </div>
-      </div>
-
-      <div className={Styles.heroImg} style={{
-        borderRadius: borderRadius,
-      }}>
-      <img src={profile}/>
-      </div>
-    </div>
+    <Home/>
 
     <div className={`${Styles.section}`} id='about'>
       <div className={Styles.techStack} style={{height: windowWidth/15}}>
