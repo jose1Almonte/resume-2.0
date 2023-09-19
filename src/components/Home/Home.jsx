@@ -31,7 +31,7 @@ export default function Home() {
     <div className={`${"section"} ${Styles.firstSection}`} id='home'>
       
       <div className={Styles.firstElement}>
-        <h1>Front-End React Developer <FcCursor size={windowWidth/18}/> </h1>
+        <h1>Front-End React Developer <FcCursor size={windowWidth/divisorNumberForIcons}/> </h1>
         <h2>Hi, I&apos;m José Almonte. A passionate Front-end React Developer based in Caracas, Venezuela. <RxGlobe color='#61DBFB'/></h2>
        
         <div>
