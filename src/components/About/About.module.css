@@ -1,0 +1,185 @@
+
+.title{
+    /* color: black; */
+    color: rgb(171, 171, 239);
+    font-weight: bold;
+    /* -webkit-text-stroke: 0.2px #000; Grosor y color del borde (Webkit/Blink) */
+    /* text-stroke: 2px #000; Grosor y color del borde (estándar) */
+    text-shadow: 
+    -2px -2px 0 rgb(0,0,0,0.5), /* Sombra superior izquierda */
+     2px -2px 0 rgb(0,0,0,0.5), /* Sombra superior derecha */
+    -2px  2px 0 rgb(0,0,0,0.5), /* Sombra inferior izquierda */
+     2px  2px 0 rgb(0,0,0,0.5); /* Sombra inferior derecha */
+     font-size: 2vw;
+    }
+    
+.textJustified {
+    /* justify-self:left; */
+    align-self: first baseline;
+    /* text-indent: 0.5em; */
+}
+
+.subtitle{
+    font-size: 2.3vw;
+    /* text-indent: 0.5em; */
+    color: rgb(255, 255, 255, 1);
+    font-weight: bold;
+}
+
+.description{
+    text-indent: 1em;
+    font-size: 1.7vw;
+    color: rgb(255, 255, 255, 0.85);
+}
+
+.marginBottom {
+    margin-bottom: 2vh;
+}
+
+.marginVertical {
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+.marginTop {
+    margin-top: 2vh;
+}
+
+.marginHorizontal {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.techStack {
+    display: flex;
+    /* background-color: grey; */
+    height: 15vh;
+    /* justify-content: space-between; */
+    align-items: flex-end;
+    /* overflow: hidden; */
+    /* justify-content: flex-start; */
+}
+
+.techStack div {
+    margin-right: 1.5vw;
+    margin-left: 1.5vw;
+}
+
+.techStack div h1 {
+    font-size: 5vw;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.aboutBox {
+    display: flex;
+    height: 70vh;
+    /* background-color: green; */
+}
+
+.margin15top {
+    margin-top: 15vh;
+}
+
+.middleBox {
+    position: relative;
+    width: 50vw;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.displayFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerAll {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktopContainer {
+    /* background-color: red; */
+    background-image: url(../../images/desktop.png);
+    background-position: 0%;
+    background-size: cover;
+    width: 80%;
+    height: 80%;
+    border-radius: 50px
+}
+.rotating_vector {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 50% 50% 50% 50%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(42,42,42,0.96);
+    animation: rotate 10s linear infinite; /* Aquí estamos aplicando la animación */
+  }
+
+.comandLineIcon {
+  position: absolute;
+  transform-origin: center; /* Establecemos el punto de origen de la transformación en el centro */
+  animation: rotateLeft 10s linear infinite; /* Animación para contrarrestar la rotación del contenedor */
+}
+
+@keyframes rotateLeft {
+    0% {
+      transform: rotate(0deg); /* Inicialmente, sin rotación */
+    }
+    100% {
+      transform: rotate(-360deg); /* Rotación completa en sentido horario (una vuelta completa) */
+    }
+  }
+  
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); /* Inicialmente, sin rotación */
+  }
+  100% {
+    transform: rotate(360deg); /* Rotación completa en sentido horario (una vuelta completa) */
+  }
+}
+
+@media (max-width: 500px) {
+    .techStack div {
+        /* margin-bottom: 5vh; */
+    }
+
+    .aboutBox {
+        /* display: flex;
+        height: 70vh; */
+        min-height: 70vh;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        /* background-color: green; */
+    }
+    
+    .middleBox {
+        /* position: relative; */
+        width: 90vw;
+    }
+
+    .desktopContainer {
+        /* background-color: red; */
+        /* background-image: url(../../images/desktop.png);
+        background-position: 0%;
+        background-size: cover; */
+        /* width: 80%; */
+        height: 50vh;
+        width: auto;
+        aspect-ratio: 1.3;
+        /* height: 80%; */
+        border-radius: 50px;
+        margin-bottom: 5vh
+    }
+}
