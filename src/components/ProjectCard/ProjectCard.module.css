@@ -51,7 +51,6 @@
 .projectName {
     font-size: 2vw;
     font-weight: bold;
-
 }
 
 .projectDate {
@@ -75,5 +74,83 @@
     min-height: 30px;
     max-height: 50px;
     /* background-color: red; */
+}
+
+@media (max-width: 500px) {
+    .displayFlex {
+        flex-direction: column;
+    }
+
+    .cardContainerMobile {
+        width: 80vw;
+        /* aspect-ratio: 2.3; */
+        border-radius: 25px;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 0px;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .projectImage {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 90%;
+        aspect-ratio: 1.3;
+        /* border-radius: 50px; */
+        /* overflow: hidden; */
+        /* background-image: url(../../images/capturaDePrueba.png); */
+        background-size: 100% auto; /* Establecemos un ancho del 100% del contenedor */
+        background-position: center top; /* Inicialmente muestra la parte superior de la imagen */
+        transition: background-position 7s ease; /* Agregamos una transición a background-position */
+        border-radius: 25px; /* Agregamos esquinas redondeadas de 10px */
+    }
+
+    .descriptionContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 90%;
+        height: auto;
+        
+    }
+
+    .projectName {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        font-size: 7vw;
+        font-weight: bold;
+    }
+    
+    .projectDate {
+        justify-content: center;
+        font-size: 5vw;
+        color: rgba(255,255,255,0.7);
+    }
+    
+    .projectDescription {
+        margin-left: 5%;
+        margin-right: 5%;
+        text-indent: 2em;
+        margin-top: 5%;
+        font-size: 5vw;
+        /* background-color: yellow; */
+    }
+    
+    .methodologiesBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 10%;
+        min-height: 30px;
+        max-height: 50px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        /* background-color: red; */
+    }
 }
 

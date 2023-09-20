@@ -22,6 +22,8 @@ export function ProjectInfo({siteUrl}) {
     })
   }
 
+  const divisor = windowWidth > 500 ? 50: 12;
+
   return (
     <>
     <Link
@@ -37,7 +39,7 @@ export function ProjectInfo({siteUrl}) {
         {
           moused.gitHubMoused ? 'rgba(255,255,255,0.5)': 'white'
         } 
-        size={windowWidth/50} 
+        size={windowWidth/divisor} 
         autoplay={true} 
         loop={true} 
         speed={0}/>
@@ -59,7 +61,7 @@ export function ProjectInfo({siteUrl}) {
         {
           moused.loadingMoused ? 'rgba(255,255,255,0.5)' : 'white'
         } 
-        size={windowWidth/50} 
+        size={windowWidth/divisor} 
         autoplay={true} 
         loop={true} 
         speed={0}/>

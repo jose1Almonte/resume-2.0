@@ -3,10 +3,13 @@ import background from '../../images/capturaDePrueba.png'
 import { BiBadgeCheck } from "react-icons/bi";
 import { TechBox } from '../TechBox/TechBox';
 import { ProjectInfo } from '../ProjectInfo/ProjectInfo';
+import { useWindowWidth } from '../../hooks/useWindowWidth';
 
 export default function ProjectCard({leftToRight, siteUrl}) {
+  const {windowWidth} = useWindowWidth();
+  
   return (
-    <div className={`${Styles.cardContainer} ${Styles.displayFlex}`}>
+    <div className={`${windowWidth > 500 ? Styles.cardContainer : Styles.cardContainerMobile} ${Styles.displayFlex}`}>
         {leftToRight ?
         (
           <>
