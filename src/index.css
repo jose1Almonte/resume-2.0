@@ -18,6 +18,33 @@ body {
   overflow-x: hidden;
   /* margin-top: 15vh; */
 }
+.title{
+  /* color: black; */
+  color: rgb(171, 171, 239);
+  font-weight: bold;
+  /* -webkit-text-stroke: 0.2px #000; Grosor y color del borde (Webkit/Blink) */
+  /* text-stroke: 2px #000; Grosor y color del borde (estándar) */
+  text-shadow: 
+  -2px -2px 0 rgb(0,0,0,0.5), /* Sombra superior izquierda */
+   2px -2px 0 rgb(0,0,0,0.5), /* Sombra superior derecha */
+  -2px  2px 0 rgb(0,0,0,0.5), /* Sombra inferior izquierda */
+   2px  2px 0 rgb(0,0,0,0.5); /* Sombra inferior derecha */
+   font-size: 2vw;
+}
+
+.subtitle{
+  font-size: 2.3vw;
+  /* text-indent: 0.5em; */
+  color: rgb(255, 255, 255, 1);
+  font-weight: bold;
+}
+
+.description{
+  text-indent: 1em;
+  font-size: 1.7vw;
+  color: rgb(255, 255, 255, 0.85);
+}
+
 
 h1 {
   color: #ffffff;
@@ -86,4 +113,18 @@ p {
 
 .section {
   min-height: 85vh;
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 6.5vw;
+  }
+
+  .subtitle {
+      font-size: 5.5vw;
+  }
+
+  .description {
+      font-size: 5.5vw;
+  }
 }

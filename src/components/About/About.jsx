@@ -57,10 +57,10 @@ export function About() {
         </div>
 
         <div className={`${Styles.middleBox} ${Styles.centerAll}`}>
-          <p className={`${Styles.title} ${Styles.textJustified} ${Styles.marginBottom} ${Styles.marginHorizontal}`}>ABOUT ME</p>
-          <p className={`${Styles.subtitle} ${Styles.marginVertical} ${Styles.marginHorizontal}`}>A dedicated Front-end Developer
+          <p className={`${"title"} ${Styles.textJustified} ${Styles.marginBottom} ${Styles.marginHorizontal}`}>ABOUT ME</p>
+          <p className={`${"subtitle"} ${Styles.marginVertical} ${Styles.marginHorizontal}`}>A dedicated Front-end Developer
 based in Caracas, Venezuela 📍</p>
-          <p className={`${Styles.description} ${Styles.marginTop} ${Styles.marginHorizontal}`}>As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications.</p>
+          <p className={`${"description"} ${Styles.marginTop} ${Styles.marginHorizontal}`}>As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications.</p>
 
         </div>
       </div>

@@ -26,8 +26,8 @@ export function HomePage() {
     <About/>
 
     <div className={`${Styles.section}`} id='projects'>
-      <p className={`${Styles.title} ${Styles.textJustified} ${Styles.portfolio}`}>PORTFOLIO</p>
-      <p className={`${Styles.subtitle} ${Styles.marginVertical} ${Styles.textIndent}`}>Each project is a unique piece of development 🧩</p>
+      <p className={`${"title"} ${Styles.textJustified} ${Styles.portfolio}`}>PORTFOLIO</p>
+      <p className={`${"subtitle"} ${Styles.marginVertical} ${Styles.textIndent}`}>Each project is a unique piece of development 🧩</p>
       <div className={Styles.cardsContainer}>
         <ProjectCard 
         leftToRight={true} 
@@ -41,8 +41,8 @@ export function HomePage() {
     <div className={Styles.section} id='contact'>
       <div className={Styles.firstBoxContact}>
         <p>
-        <p className={`${Styles.title} ${Styles.textJustified}`}>CONTACT</p>
-        <p className={`${Styles.subtitle} ${Styles.marginVertical}`}>Don't be shy! Hit me up! 👇</p>
+        <p className={`${"title"} ${Styles.textJustified}`}>CONTACT</p>
+        <p className={`${"subtitle"} ${Styles.marginVertical}`}>Don't be shy! Hit me up! 👇</p>
         </p>
 
         <div className={Styles.aditionalInformation}>
