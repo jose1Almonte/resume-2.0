@@ -1,9 +1,6 @@
-import React from "react";
 import Styles from './HomePage.module.css';
 import { useWindowWidth } from '../../hooks/useWindowWidth';
-import { useAnimationContainer } from '../../hooks/useAnimationContainer';
 import {Link} from 'react-router-dom'
-import { useState } from 'react';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import AditionalInformation from '../../components/AditionalInformation/AditionalInformation';
 import UseAnimations from 'react-useanimations';
@@ -15,8 +12,8 @@ import { About } from "../../components/About/About";
 
 export function HomePage() {
   const {windowWidth} = useWindowWidth();
-  const divisorNumberForIcons = 30;
-  const divisorNumberForCircle = 7.7;
+  const divisorNumberForIcons = windowWidth > 500 ? 30 : 6;
+  // const divisorNumberForCircle = 7.7;
 
   return (
     <div className={Styles.giantBox}>
@@ -38,7 +35,7 @@ export function HomePage() {
       </div>
     </div>
     
-    <div className={Styles.section} id='contact'>
+    <div className={`${Styles.section}`} id='contact'>
       <div className={Styles.firstBoxContact}>
         <p>
         <p className={`${"title"} ${Styles.textJustified}`}>CONTACT</p>
@@ -63,8 +60,6 @@ export function HomePage() {
         </div>
       </div>
     </div>
-    
-    {/* <UseAnimations animation={github} strokeColor='white' size={56} autoplay={true} loop={true} speed={0}/> */}
     </div>
   )
 }

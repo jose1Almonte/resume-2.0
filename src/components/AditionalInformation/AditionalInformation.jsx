@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 export default function AditionalInformation() {
     const {windowWidth} = useWindowWidth()
-    const divisorNumber = 40;
+    const divisorNumber = windowWidth > 500 ? 40 : 15 ;
     return (
         <>
             <Location windowWidth={windowWidth/divisorNumber}/>

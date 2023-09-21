@@ -5,7 +5,7 @@ import Styles from './ProjectInfo.module.css'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useWindowWidth } from '../../hooks/useWindowWidth';
-
+import { FcEnteringHeavenAlive } from "react-icons/fc";
 export function ProjectInfo({siteUrl}) {
 
   const {windowWidth} = useWindowWidth();
@@ -51,7 +51,11 @@ export function ProjectInfo({siteUrl}) {
     target='_blank' 
     className={Styles.text}>
         Live Demo
-        <UseAnimations 
+
+        <FcEnteringHeavenAlive color={
+          moused.loadingMoused ? 'rgba(255,255,255,0.5)' : 'white'
+        } size={windowWidth/divisor}/>
+        {/* <UseAnimations 
         animation={loading2} 
         strokeColor=
         {
@@ -64,7 +68,7 @@ export function ProjectInfo({siteUrl}) {
         size={windowWidth/divisor} 
         autoplay={true} 
         loop={true} 
-        speed={0}/>
+        speed={0}/> */}
     </Link>
     </>
   )
