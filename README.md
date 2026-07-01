@@ -1,8 +1,47 @@
-# React + Vite
+# Resume 2.0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal resume website built with **React** + **Vite**. Deployed on Firebase Hosting.
 
-Currently, two official plugins are available:
+## Pages
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Home** (`/`) — Welcome page with carousel and polygon image links
+- **Skills** (`/skills`) — Skills overview with charts
+- **About Me** (`/aboutMe`) — About section
+- **Experience** (`/experience`) — Work experience timeline
+- **Contact Me** (`/contactMe`) — Contact form
+
+## Tech Stack
+
+- React 18 + React Router 6
+- Vite 4
+- Chart.js + react-chartjs-2
+- React Motion (animations)
+- Firebase Hosting
+
+## Getting Started
+
+```bash
+# Install dependencies
+yarn install
+
+# Start dev server (http://localhost:5173)
+yarn dev
+
+# Build for production
+yarn build
+
+# Preview production build
+yarn preview
+
+# Lint
+yarn lint
+```
+
+## Deploy
+
+```bash
+yarn build
+firebase deploy
+```
+
+The Firebase project is `resume-jose-almonte`.
